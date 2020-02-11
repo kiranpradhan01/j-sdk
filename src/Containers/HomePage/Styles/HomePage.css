@@ -1,0 +1,47 @@
+#HomePage_main {
+    display:flex; 
+    justify-content: space-between; 
+}
+
+#HomePage_left {
+    padding-top: 8vw; 
+    padding-left: 3vw; 
+}
+
+#HomePage_right {
+    text-align: center; 
+    padding-top: 8vw; 
+}
+
+#HomePage_buttons {
+    display: flex;
+    justify-content: left;   
+}
+
+#HomePage_buttons > a {
+    padding-left: 30px; 
+    padding-top: 15px;
+    font-size: 15pt; 
+}
+
+#HomePage_buttons > a:hover{
+    text-decoration: underline;
+}
+
+#HomePage_buttons > a.active {
+    color: gray; 
+}
+
+#HomePage_title {
+    color: gray; 
+    font-size: 40pt; 
+}
+
+#HomePage_paraText {
+    text-align: left; 
+    width: 500px; 
+}
+
+
+
+
