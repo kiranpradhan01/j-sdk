@@ -6,14 +6,13 @@ class Button extends React.Component {
     constructor(props) {
       super(props); 
         this.state = { 
-            text: this.props.text 
+            text: this.props.text,
+            style: this.props.style 
         }
     }
     render() {
       return (
-        <div id="button_container">
-            <button type="button"> {this.state.text} </button>
-        </div>
+            <button type="button" style={this.state.style}> {this.state.text} </button>
 
       );
     }

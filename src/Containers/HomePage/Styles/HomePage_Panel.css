@@ -1,0 +1,60 @@
+#HomePage_Panel {
+    width: 98%; 
+    height: 62vh; 
+    margin-left: 1vw;
+    background-color: #252932; 
+    border-radius: 25px;
+    margin-top: 5vh; 
+}
+
+#HomePage_Panel_header {
+    display: flex;
+    flex-direction: column;  
+    margin-left: 30vw; 
+}
+
+#line1, #line3 {
+    text-align: left; 
+    font-size: 40pt; 
+    color: gray; 
+    margin-left: 15.25vw; 
+}
+#line1 {
+    margin-bottom: -50px; 
+    margin-left: 16vw; 
+}
+
+#line3 {
+    margin-top: -50px; 
+}
+
+#line2 {
+    color: white;
+    font-size: 40pt; 
+}
+
+#green_text {
+    color:#59EF9E
+}
+
+caption {
+    color: white; 
+    font-size: 15pt; 
+    width: 70vw; 
+    margin-left: 15vw;  
+}
+
+#panel_tag {
+    margin-left: 47vw; 
+    color: white; 
+    text-decoration: underline; 
+    font-size: 15pt; 
+}
+
+#panel_tag:hover {
+    color: #59EF9E;
+}
+
+#panel_tag:active {
+    color: #59EF9E;
+}
