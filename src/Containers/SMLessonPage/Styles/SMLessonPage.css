@@ -10,7 +10,6 @@
     padding-top: 100px; 
 }
 
-
 #SMLessonPage_introduction_Text header { 
     width: 552px;
     height: 227px;
@@ -25,10 +24,10 @@
     color: var(--dark);
 }
 
-#SMLessonPage_introduction_Text p {
+#SMLessonPage_introduction_Text p, #SMLessonPage_datascientist p {
     width: 649px;
     height: 238px;
-    font-family: AvenirNext;
+    font-family: 'Lato';
     font-size: 20px;
     font-weight: 500;
     font-stretch: normal;
@@ -38,12 +37,51 @@
     color: var(--dark);
 }
 
-
-
 .socialMediaDashboardImage {
     width: 450px;
     height: 400px;
 }
 
+#SMLessonPage_datascientist {
+    margin: auto;
+    width: 50%;
+} 
+
+#SMLessonPage_datascientist header {
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+}
+
+#SMLessonPage_datascientist header p {
+    width: 391px;
+    height: 41px;
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: var(--dark);
+}
+
+#SMLessonPage_datascientist p {
+    text-align: center;
+}
+
+.dot1 {
+    width: 197px;
+    height: 197px;
+    opacity: 0.4;
+    background-color: rgba(17, 132, 255, 0.3);
+}
+
+.dot2, .dot3 {
+    width: 287px;
+    height: 287px;
+    opacity: 0.4;
+    background-color: rgba(17, 132, 255, 0.3);
+}
 
 
