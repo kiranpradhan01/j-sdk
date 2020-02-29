@@ -10,16 +10,17 @@ body {
     height: 50px;
     background-color: #f6f6f6;
     display: flex; 
-    justify-content: flex-start; 
+    justify-content: flex-start, space-evenly; 
     align-self: center; 
     padding-top: 30px; 
+    overflow: hidden;
   }
 
   #cognition {
     width: 205px;
-    height: 41px;
+    height: 105px;
     font-family: 'Lato', ;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: bold;
