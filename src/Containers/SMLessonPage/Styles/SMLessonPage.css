@@ -27,11 +27,7 @@
 #SMLessonPage_introduction_Text p, #SMLessonPage_datascientist p {
     width: 649px;
     height: 238px;
-<<<<<<< HEAD
     font-family: 'Lato';
-=======
-    font-family: 'Lato', ;
->>>>>>> 93f19b4d4bfd9e69ba87ab2ae224642e78dc459c
     font-size: 20px;
     font-weight: 500;
     font-stretch: normal;
@@ -46,7 +42,6 @@
     height: 400px;
 }
 
-<<<<<<< HEAD
 #SMLessonPage_datascientist {
     margin: auto;
     width: 50%;
@@ -88,58 +83,57 @@
     opacity: 0.4;
     background-color: rgba(17, 132, 255, 0.3);
 }
-=======
 #SMLessonPage_uploadForm {
-    display: flex; 
-    justify-content: space-around; 
-    padding-top: 8vh; 
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8vh;
 }
 
-#SMLessonPage_uploadForm_textLeft  p {
-  width: 338px;
-  height: 119px;
-  font-family: 'Lato', ;
-  font-size: 25px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.94px;
-  color: var(--dark);
+#SMLessonPage_uploadForm_textLeft p {
+    width: 338px;
+    height: 119px;
+    font-family: 'Lato', ;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: var(--dark);
 }
 
 #SMLessonPage_uploadForm_center {
-  width: 500px;
-  height: 238px;
-  font-family: 'Lato', ;
-  font-size: 20px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.63px;
-  color: var(--dark);
+    width: 500px;
+    height: 238px;
+    font-family: 'Lato', ;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    color: var(--dark);
 }
 
-#SMLessonPage_uploadForm_center_form { 
+#SMLessonPage_uploadForm_center_form {
     position: relative;
     overflow: hidden;
     display: inline-block;
-} 
-
-#SMLessonPage_uploadForm_center_form p {
-    text-align: center; 
-    width: 50%; 
 }
 
-#SMLessonPage_uploadForm_center_form_area  {
+#SMLessonPage_uploadForm_center_form p {
+    text-align: center;
+    width: 50%;
+}
+
+#SMLessonPage_uploadForm_center_form_area {
     width: 500px;
     height: 41px;
     border-radius: 10px;
-    border: 3px solid black ;
+    border: 3px solid black;
     background-color: #ffffff;
     font-family: 'Lato', ;
-    height: 50%; 
+    height: 50%;
 }
 
 #SMLessonPage_uploadForm_center_form input[type=file] {
@@ -151,19 +145,16 @@
 }
 
 #SMLessonPage_uploadForm_disclaimer {
-  width: 180px;
-  height: 162px;
-  font-family: 'Lato', ;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.5px;
-  color: var(--dark);
+    width: 180px;
+    height: 162px;
+    font-family: 'Lato', ;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: var(--dark);
 }
-
-
->>>>>>> 93f19b4d4bfd9e69ba87ab2ae224642e78dc459c
 
 
