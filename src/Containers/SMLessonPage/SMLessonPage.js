@@ -2,6 +2,7 @@ import React from 'react';
 import './Styles/SMLessonPage.css'; 
 //import ContactButton from '../../Components/Button/Button.js'
 import SocialDashboard from '../../Pictures/SocialDashboard.png';
+import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 
 
 class SMLessonPage extends React.Component {
@@ -26,6 +27,39 @@ class SMLessonPage extends React.Component {
               <img src={SocialDashboard} alt="Social Media Dashboard" class="socialMediaDashboardImage"></img>
             </div>
           </div>
+
+          <div id="SMLessonPage_uploadForm">
+
+            <div id="SMLessonPage_uploadForm_textLeft">
+              <p>
+                Let’s look at how Facebook Ads can Target Users:
+              </p>
+            </div> 
+
+            <div id="SMLessonPage_uploadForm_center">
+              <header> Upload your Facebook Data JSON File </header>
+              <p> Facebook (and other social media sites) take note of what you might like and what interests you have, 
+                  that way they can give you ads that align with your interest the most! We’d like to show you what yours are 
+                  and help you understand them better. </p>
+              <div id="SMLessonPage_uploadForm_center_form">  
+                <div id="SMLessonPage_uploadForm_center_form_area">
+                  <i className="fas fa-file-upload"> </i>
+                  <p> Browse... </p>
+                </div>   
+                <input type="file" id="myFile" name="filename"/>
+              </div>
+              <div> 
+                <p> Dont know what that is? <a href="https://www.cnbc.com/2018/03/23/how-to-download-a-copy-of-facebook-data-about-you.html"> Click Here </a> </p>
+              </div> 
+            </div>
+
+          <div id="SMLessonPage_uploadForm_disclaimer"> 
+            <p> 
+              We know, we know, this isn’t the smoothest way to do this. We’re working on it right now. 
+              Think you can help us? Click here.
+            </p> 
+          </div>
+        </div>
 
 
         </div>
