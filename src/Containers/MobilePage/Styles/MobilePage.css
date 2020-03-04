@@ -1,0 +1,20 @@
+#MobilePage_main {
+    position: fixed; 
+    width: 100%; 
+    overflow: hidden;
+}
+#MobilePage_logo {
+    width: 205px;
+    padding-bottom: 6vh; 
+    font-family: 'Lato', ;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: bold;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: #313131;
+    text-decoration: none;
+    margin: auto; 
+    text-align: center; 
+}

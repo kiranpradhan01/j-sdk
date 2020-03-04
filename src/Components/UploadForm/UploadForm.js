@@ -31,9 +31,10 @@ class UploadForm extends React.Component {
             //this.setState({loadingCompHidden:false}); 
             this.props.onSubmitClicked(false);
        } else {
-           let errorHandling = document.createElement("p"); 
-           errorHandling.innerText = "Please upload files that are of following types: .JSON or .sql"; 
            let errorHandlingDiv = document.getElementById("SMLessonPage_uploadForm_center_form_eror"); 
+           errorHandlingDiv.innerHTML = " "; 
+           let errorHandling = document.createElement("p"); 
+           errorHandling.innerText = "Please upload files that are of following types: .JSON or .sql";  
            errorHandlingDiv.appendChild(errorHandling); 
        } 
     }
@@ -51,7 +52,7 @@ class UploadForm extends React.Component {
             <p> Facebook (and other social media sites) take note of what you might like and what interests you have, 
                 that way they can give you ads that align with your interest the most! We’d like to show you what yours are 
                 and help you understand them better. </p>
-            <form id="SMLessonPage_uploadForm_center_form" onSubmit={this.onFormSubmit}>  
+            <form id="SMLessonPage_uploadForm_center_form">  
                 <div id="SMLessonPage_uploadForm_center_form_area">
                 <i className="fas fa-file-upload"> </i>
                 <p> Browse... </p>
