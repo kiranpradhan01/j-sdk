@@ -1,5 +1,7 @@
 import React from 'react';
 import './Styles/UploadForm.css'; 
+import UploadIcon from '../../Pictures/upload.png'; 
+import axios from 'axios'; 
 
 // This is the the loading component that is rendered onto the page when we are doing work on the backend 
 class UploadForm extends React.Component {
@@ -13,13 +15,13 @@ class UploadForm extends React.Component {
        this.onClickHandler = this.onClickHandler.bind(this); 
     }
     onChange = e =>  {
-        let fileDiv = document.getElementById("fileName");
+        let fileDiv = document.getElementById("SMLessonPage_uploadForm_center_form_fileName");
         fileDiv.innerHTML = " ";  
         this.setState({file:e.target.files[0], loaded: 1}); 
         console.log(this.state.file); 
-        let fileName = document.createElement("p"); 
-        fileName.innerHTML = e.target.files[0].name; 
-        fileDiv.appendChild(fileName);  
+        //let fileName = document.createElement("p"); 
+        fileDiv.innerHTML = e.target.files[0].name; 
+        //fileDiv.appendChild(fileName);  
     }
     onClickHandler() {
        console.log(this.state.file.name);
@@ -30,14 +32,25 @@ class UploadForm extends React.Component {
             console.log("hi"); 
             //this.setState({loadingCompHidden:false}); 
             this.props.onSubmitClicked(false);
+            this.fetchJSON(data); 
        } else {
            let errorHandlingDiv = document.getElementById("SMLessonPage_uploadForm_center_form_eror"); 
            errorHandlingDiv.innerHTML = " "; 
            let errorHandling = document.createElement("p"); 
            errorHandling.innerText = "Please upload files that are of following types: .JSON or .sql";  
            errorHandlingDiv.appendChild(errorHandling); 
-       } 
+       }  
     }
+
+    fetchJSON(data) {
+        axios.post("http://localhost:8000/upload", data, { // receive two parameter endpoint url ,form data 
+        })
+        .then(res => { // then print response status
+            console.log(res.statusText)
+        })
+
+    }
+
     render() {
       return (
         <div id="SMLessonPage_uploadForm">
@@ -54,9 +67,10 @@ class UploadForm extends React.Component {
                 and help you understand them better. </p>
             <form id="SMLessonPage_uploadForm_center_form">  
                 <div id="SMLessonPage_uploadForm_center_form_area">
-                <i className="fas fa-file-upload"> </i>
-                <p> Browse... </p>
-                <div id="fileName"></div>
+                <div id="something">
+                    <img id = "SMLessonPage_uploadForm_center_form_area_icon" src={UploadIcon} alt="Upload Icon"/> 
+                </div>
+                <p id="SMLessonPage_uploadForm_center_form_fileName"> Browse... </p>
                 </div>   
                 <input type="file" id="myFile" name="filename" onChange={this.onChange}/>
             </form>
