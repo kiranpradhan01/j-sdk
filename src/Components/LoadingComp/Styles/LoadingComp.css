@@ -1,0 +1,81 @@
+
+#SMLessonPage_datascientist {
+    margin: auto;
+    width: 50%;
+    padding-top: 10vh; 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+} 
+
+#SMLessonPage_datascientist_text header {
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+}
+
+#SMLessonPage_datascientist_text header p {
+    width: 391px;
+    height: 41px;
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: var(--dark);
+}
+
+#SMLessonPage_datascientist_text p {
+    width: 649px;
+    height: 238px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    color: var(--dark);
+}
+
+#SMLessonPage_datascientist_text p {
+    text-align: center;
+}
+
+#SMLessonPage_datascientist_text {
+    position: absolute;
+}
+
+.dot {
+    position: relative; 
+    top: 0; 
+    left: 0; 
+}
+
+#dot1 {
+    width: 197px;
+    height: 197px;
+    opacity: 0.4;
+    background-color: rgba(17, 132, 255, 0.3);
+    border-radius: 50%; 
+    position: absolute;
+    margin-left: 2vw;
+
+}
+
+#dot2, #dot3 {
+    width: 287px;
+    height: 287px;
+    opacity: 0.4;
+    background-color: rgba(17, 132, 255, 0.3);
+    border-radius: 50%;
+    position: absolute; 
+    margin-left: absolute;
+    margin-left: 12vw;  
+}
+
+#dot3 {
+    margin-left: 25vw; 
+}

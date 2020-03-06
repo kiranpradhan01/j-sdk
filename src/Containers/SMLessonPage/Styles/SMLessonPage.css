@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+#SMLessonPage_introduction {
+    display: flex; 
+    justify-content: space-around; 
+}
+
+#SMLessonPage_introduction{
+    padding-top: 100px; 
+}
+
+#SMLessonPage_introduction_Text header { 
+    width: 552px;
+    height: 227px;
+    background-color: var(--dark);
+    font-family: 'Lato', ;
+    font-size: 60px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.88px;
+    color: var(--dark);
+}
+
+#SMLessonPage_introduction_Text p {
+    width: 649px;
+    height: 238px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    color: var(--dark);
+}
+
+.socialMediaDashboardImage {
+    width: 450px;
+    height: 400px;
+}

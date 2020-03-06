@@ -1,0 +1,20 @@
+#MobilePage {  
+    visibility: hidden; 
+    width: 100%; 
+}
+
+@media (max-width: 600px) {
+    #MobilePage {
+      visibility: visible; 
+    }
+
+    #SMLessonPage {
+        display: none; 
+    }
+    #HomePage {
+        display: none; 
+    }
+    #NavBar {
+        visibility: hidden; 
+    }
+}
