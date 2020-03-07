@@ -24,6 +24,7 @@ class HomePage extends React.Component {
     render() {
       const contactButton_text = "Contact Us"
       return (
+        <>
         <div id = "HomePage"> 
           <div id="HomePage_topPanel">
             <HomePage_Panel/> 
@@ -108,6 +109,10 @@ class HomePage extends React.Component {
               
               </div>
           </div> 
+          <AdBox>
+            
+          </AdBox>
+          </>
       );
     }
   }

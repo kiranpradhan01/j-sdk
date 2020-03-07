@@ -5,6 +5,7 @@ import LoadingComp from '../../Components/LoadingComp/LoadingComp.js';
 import UploadForm from '../../Components/UploadForm/UploadForm.js'; 
 import SocialDashboard from '../../Pictures/SocialDashboard.png';
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
+import AdBox from '../../Components/AdBox/AdBox';
 
 
 class SMLessonPage extends React.Component {
