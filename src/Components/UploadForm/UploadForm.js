@@ -2,6 +2,7 @@ import React from 'react';
 import './Styles/UploadForm.css'; 
 import UploadIcon from '../../Pictures/upload.png'; 
 import axios from 'axios'; 
+import jQuery from 'jquery'; 
 
 // This is the the loading component that is rendered onto the page when we are doing work on the backend 
 class UploadForm extends React.Component {
@@ -12,7 +13,8 @@ class UploadForm extends React.Component {
         }
         this.onChange = this.onChange.bind(this)
        // this.fileUpload = this.fileUpload.bind(this)
-       this.onClickHandler = this.onClickHandler.bind(this); 
+       this.onClickHandler = this.onClickHandler.bind(this);
+       this.fetchJSON = this.fetchJSON.bind(this);  
     }
     onChange = e =>  {
         let fileDiv = document.getElementById("SMLessonPage_uploadForm_center_form_fileName");
@@ -29,7 +31,8 @@ class UploadForm extends React.Component {
        if(myFileName.includes("json") || myFileName.includes("sql")) { 
             const data = new FormData(); 
             data.append('file', this.state.file); 
-            console.log("hi"); 
+            console.log(data);
+            console.log(this.state.file);  
             //this.setState({loadingCompHidden:false}); 
             this.props.onSubmitClicked(false);
             this.fetchJSON(data); 
@@ -42,14 +45,30 @@ class UploadForm extends React.Component {
        }  
     }
 
-    fetchJSON(data) {
+    fetchJSON = (data) => {
         axios.post("http://localhost:8000/upload", data, { // receive two parameter endpoint url ,form data 
         })
         .then(res => { // then print response status
-            console.log(res.statusText)
+            console.log(res.statusText) 
+            console.log(res); 
+            let path = "../../../" + res.data.path; 
+            
+            console.log(path); 
+            
+            fetch(path).then(response => {
+                console.log(response)
+              })
+              .then(data => {
+                // Work with JSON data here
+                console.log(data);
+              }).catch(err => {
+                // Do something for an error here
+                console.log(err); 
+              }); 
         })
-
+        .catch(Error) 
     }
+
 
     render() {
       return (

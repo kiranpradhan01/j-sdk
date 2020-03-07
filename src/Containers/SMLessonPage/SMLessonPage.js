@@ -72,7 +72,7 @@ class SMLessonPage extends React.Component {
           </div>
           {this.state.loadingCompHidden && !this.state.loadedOnce ? <UploadForm onSubmitClicked={(newResult) => this.onSubmitClicked(newResult)} />:null}
           {this.showLoader()}
-          {this.state.loadedOnce ? <p style={{textAlign:"center"}}> Alright lets see what we have here! </p>:null}
+          {this.state.loadedOnce ? <p style={{textAlign:"center"}}> In the meantime, lets find a topic that you are not interested in and create an ad campaign for it! </p>:null}
         </div>
     )}
 }
