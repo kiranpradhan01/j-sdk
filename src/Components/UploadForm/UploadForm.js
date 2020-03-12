@@ -10,6 +10,7 @@ class UploadForm extends React.Component {
       super(props); 
         this.state = {
             file: null,
+            adwords: ["Basketball", "Track", "Justin Bieber", "Lebron James", "The Weeknd", "NBA", "Los Angeles Lakers"]
         }
         this.onChange = this.onChange.bind(this)
        // this.fileUpload = this.fileUpload.bind(this)
@@ -33,8 +34,8 @@ class UploadForm extends React.Component {
             data.append('file', this.state.file); 
             console.log(data);
             console.log(this.state.file);  
-            //this.setState({loadingCompHidden:false}); 
-            this.props.onSubmitClicked(false);
+            console.log(this.state.adwords); 
+            this.props.onSubmitClicked(false, this.state.adwords);
             this.fetchJSON(data); 
        } else {
            let errorHandlingDiv = document.getElementById("SMLessonPage_uploadForm_center_form_eror"); 

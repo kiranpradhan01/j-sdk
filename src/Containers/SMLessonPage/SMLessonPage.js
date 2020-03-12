@@ -4,6 +4,7 @@ import './Styles/SMLessonPage.css';
 import LoadingComp from '../../Components/LoadingComp/LoadingComp.js'; 
 import UploadForm from '../../Components/UploadForm/UploadForm.js'; 
 import SocialDashboard from '../../Pictures/SocialDashboard.png';
+import Adwords from '../../Components/Adwords/Adwords.js'; 
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 
 
@@ -13,7 +14,8 @@ class SMLessonPage extends React.Component {
         this.timeout = 2000;
         this.state = {   
           loadingCompHidden: true,
-          loadedOnce: false
+          loaded: 0, 
+          adwords: []
         } 
         this.onSubmitClicked = this.onSubmitClicked.bind(this); 
     }
@@ -37,9 +39,10 @@ class SMLessonPage extends React.Component {
       return  post(url, formData,config)
     }
     */ 
-    onSubmitClicked(newResult) {
+    onSubmitClicked(newResult, words) {
       this.setState({ 
-        loadingCompHidden: newResult
+        loadingCompHidden: newResult,
+        adwords: words
       }); 
     }
     showLoader() {
@@ -47,7 +50,7 @@ class SMLessonPage extends React.Component {
       const dataScincedescription = "While we're analyzing your ad words, let's simulate an ad campaign to show how far simple advertisements can spread through a social media platform by targeting people with specific interests"; 
        if(!this.state.loadingCompHidden) {
         setTimeout(() => {
-          this.setState({loadingCompHidden: true, loadedOnce: true});
+          this.setState({loadingCompHidden: true, loaded: 1});
         }, this.timeout);
         return (<LoadingComp title={dataSciencetitle} description={dataScincedescription}/>)
        } 
@@ -70,9 +73,9 @@ class SMLessonPage extends React.Component {
               <img src={SocialDashboard} alt="Social Media Dashboard" class="socialMediaDashboardImage"></img>
             </div>
           </div>
-          {this.state.loadingCompHidden && !this.state.loadedOnce ? <UploadForm onSubmitClicked={(newResult) => this.onSubmitClicked(newResult)} />:null}
+          {this.state.loadingCompHidden && (this.state.loaded==0) ? <UploadForm onSubmitClicked={(newResult, words) => this.onSubmitClicked(newResult, words)} />:null}
           {this.showLoader()}
-          {this.state.loadedOnce ? <p style={{textAlign:"center"}}> In the meantime, lets find a topic that you are not interested in and create an ad campaign for it! </p>:null}
+          {(this.state.loaded==1) ? <Adwords adwords={this.state.adwords}/> :null}
         </div>
     )}
 }
