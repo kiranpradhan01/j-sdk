@@ -1,5 +1,5 @@
 import React from 'react';
-import './Styles/LoadingComp.css'; 
+import './Styles/LoadingComp.css';
 
 // This is the the loading component that is rendered onto the page when we are doing work on the backend 
 class LoadingComp extends React.Component {

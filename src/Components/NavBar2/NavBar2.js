@@ -1,6 +1,6 @@
 import React from 'react';
 import './Styles/NavBar2.css'; 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // This is the Navigation bar that belongs on the top of the page 
 class NavBar extends React.Component {

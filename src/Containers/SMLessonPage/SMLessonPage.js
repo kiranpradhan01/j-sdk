@@ -5,6 +5,7 @@ import LoadingComp from '../../Components/LoadingComp/LoadingComp.js';
 import UploadForm from '../../Components/UploadForm/UploadForm.js'; 
 import SocialDashboard from '../../Pictures/SocialDashboard.png';
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
+import CircleAds from '../../Components/CircleAds/CircleAds.js'
 
 
 class SMLessonPage extends React.Component {
@@ -56,6 +57,7 @@ class SMLessonPage extends React.Component {
 
     render() {
       return (
+        <div id="container">
         <div id = "SMLessonPage">
           <div id="SMLessonPage_introduction"> 
             <div id="SMLessonPage_introduction_Text">
@@ -73,6 +75,11 @@ class SMLessonPage extends React.Component {
           {this.state.loadingCompHidden && !this.state.loadedOnce ? <UploadForm onSubmitClicked={(newResult) => this.onSubmitClicked(newResult)} />:null}
           {this.showLoader()}
           {this.state.loadedOnce ? <p style={{textAlign:"center"}}> In the meantime, lets find a topic that you are not interested in and create an ad campaign for it! </p>:null}
+        </div>
+        {/* div and container div added for testing CircleAds */}
+        <div id="circleAds">
+          <CircleAds/>
+        </div>
         </div>
     )}
 }
