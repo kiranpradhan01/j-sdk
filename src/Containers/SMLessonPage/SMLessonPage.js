@@ -6,6 +6,7 @@ import UploadForm from '../../Components/UploadForm/UploadForm.js';
 import SocialDashboard from '../../Pictures/SocialDashboard.png';
 import Adwords from '../../Components/Adwords/Adwords.js'; 
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
+import CircleAds from '../../Components/CircleAds/CircleAds.js'
 
 
 class SMLessonPage extends React.Component {
@@ -59,6 +60,7 @@ class SMLessonPage extends React.Component {
 
     render() {
       return (
+        <div id="container">
         <div id = "SMLessonPage">
           <div id="SMLessonPage_introduction"> 
             <div id="SMLessonPage_introduction_Text">
@@ -76,6 +78,11 @@ class SMLessonPage extends React.Component {
           {this.state.loadingCompHidden && (this.state.loaded==0) ? <UploadForm onSubmitClicked={(newResult, words) => this.onSubmitClicked(newResult, words)} />:null}
           {this.showLoader()}
           {(this.state.loaded==1) ? <Adwords adwords={this.state.adwords}/> :null}
+        </div>
+        {/* div and container div added for testing CircleAds */}
+        <div id="circleAds">
+          <CircleAds/>
+        </div>
         </div>
     )}
 }
