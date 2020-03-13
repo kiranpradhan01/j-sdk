@@ -5,7 +5,6 @@ import LoadingComp from '../../Components/LoadingComp/LoadingComp.js';
 import UploadForm from '../../Components/UploadForm/UploadForm.js'; 
 import SocialDashboard from '../../Pictures/SocialDashboard.png';
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
-import CircleAds from '../../Components/CircleAds/CircleAds.js'
 
 
 class SMLessonPage extends React.Component {
@@ -45,12 +44,12 @@ class SMLessonPage extends React.Component {
     }
     showLoader() {
       const dataSciencetitle = "Our data scientists is on it"; 
-      const dataScincedescription = "While we're analyzing your ad words, let's simulate an ad campaign to show how far simple advertisements can spread through a social media platform by targeting people with specific interests"; 
+      const dataSciencedescription = "While we're analyzing your ad words, let's simulate an ad campaign to show how far simple advertisements can spread through a social media platform by targeting people with specific interests"; 
        if(!this.state.loadingCompHidden) {
         setTimeout(() => {
           this.setState({loadingCompHidden: true, loadedOnce: true});
         }, this.timeout);
-        return (<LoadingComp title={dataSciencetitle} description={dataScincedescription}/>)
+        return (<LoadingComp title={dataSciencetitle} description={dataSciencedescription}/>)
        } 
        return (null)
     }
@@ -77,9 +76,6 @@ class SMLessonPage extends React.Component {
           {this.state.loadedOnce ? <p style={{textAlign:"center"}}> In the meantime, lets find a topic that you are not interested in and create an ad campaign for it! </p>:null}
         </div>
         {/* div and container div added for testing CircleAds */}
-        <div id="circleAds">
-          <CircleAds/>
-        </div>
         </div>
     )}
 }
