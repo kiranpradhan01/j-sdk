@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+#SMLessonPage_usersReached_header_text1 {
+    width: 960px;
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: var(--dark);
+    margin-left: 10vw; 
+
+}
+
+#SMLessonPage_usersReached_header_text2 {
+    height: 50px; 
+    width: 800px;
+    padding-top: 25px; 
+    padding-bottom: 75px; 
+    margin: auto; 
+    font-family: 'Lato';
+    font-size: 80pt;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: 5.27px;
+    text-align: right;
+    color: var(--dark);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+#SMLessonPage_usersReached_header_text2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#SMLessonPage_usersReached_subheader {
+    margin: auto; 
+    padding-top: 6vh; 
+    width: 380px;
+    height: 41px;
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: var(--dark);
+}
+
+#SMLessonPage_usersReached_subtext {
+    width: 712px;
+    margin: auto; 
+    padding-top: 2vh;
+    text-align: center; 
+    height: 119px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    color: var(--dark);
+}
+
+#SMLessonsPage_usersReached_adWordsGraph {
+    margin-top: 40vh; 
+}
+
+#SMLessonsPage_usersReached_lessons {
+    margin-top: 100vh; 
+}

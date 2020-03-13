@@ -4,9 +4,16 @@ import './Styles/SMLessonPage.css';
 import LoadingComp from '../../Components/LoadingComp/LoadingComp.js'; 
 import UploadForm from '../../Components/UploadForm/UploadForm.js'; 
 import SocialDashboard from '../../Pictures/SocialDashboard.png';
+import Adwords from '../../Components/Adwords/Adwords.js'; 
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
+<<<<<<< HEAD
 import AdBox from '../../Components/AdBox/AdBox';
 
+=======
+import UsersReached from '../../Components/UsersReached/UsersReached.js'; 
+import CreateAd from '../../Components/CreateAd/CreateAd.js'; 
+import CircleAds from '../../Components/CircleAds/CircleAds.js';
+>>>>>>> a1dd07d237b690b1e41886442ccef5bbea92f8d2
 
 class SMLessonPage extends React.Component {
     constructor(props) {
@@ -14,9 +21,12 @@ class SMLessonPage extends React.Component {
         this.timeout = 2000;
         this.state = {   
           loadingCompHidden: true,
-          loadedOnce: false
+          loaded: 0, 
+          adwords: []
         } 
         this.onSubmitClicked = this.onSubmitClicked.bind(this); 
+        this.onAdwordClicked = this.onAdwordClicked.bind(this); 
+        this.onCreateAdClicked = this.onCreateAdClicked.bind(this); 
     }
     /* 
     onFormSubmit(e){
@@ -38,25 +48,41 @@ class SMLessonPage extends React.Component {
       return  post(url, formData,config)
     }
     */ 
-    onSubmitClicked(newResult) {
+    onCreateAdClicked(number, reach,weeks) { 
+      this.setState({
+        estimatedReach: reach,
+        loaded:number,
+        weeksNum: weeks 
+      })
+    }
+    onSubmitClicked(newResult, words) {
       this.setState({ 
-        loadingCompHidden: newResult
+        loadingCompHidden: newResult,
+        adwords: words
       }); 
+    }
+    onAdwordClicked(number, selectedAdWord) {
+      this.setState({ 
+        loaded: number,
+        selectedWord: selectedAdWord
+      }); 
+      console.log(this.state.loaded); 
     }
     showLoader() {
       const dataSciencetitle = "Our data scientists is on it"; 
-      const dataScincedescription = "While we're analyzing your ad words, let's simulate an ad campaign to show how far simple advertisements can spread through a social media platform by targeting people with specific interests"; 
+      const dataSciencedescription = "While we're analyzing your ad words, let's simulate an ad campaign to show how far simple advertisements can spread through a social media platform by targeting people with specific interests"; 
        if(!this.state.loadingCompHidden) {
         setTimeout(() => {
-          this.setState({loadingCompHidden: true, loadedOnce: true});
+          this.setState({loadingCompHidden: true, loaded: 1});
         }, this.timeout);
-        return (<LoadingComp title={dataSciencetitle} description={dataScincedescription}/>)
+        return (<LoadingComp title={dataSciencetitle} description={dataSciencedescription}/>)
        } 
        return (null)
     }
 
     render() {
       return (
+        <div id="container">
         <div id = "SMLessonPage">
           <div id="SMLessonPage_introduction"> 
             <div id="SMLessonPage_introduction_Text">
@@ -71,9 +97,12 @@ class SMLessonPage extends React.Component {
               <img src={SocialDashboard} alt="Social Media Dashboard" class="socialMediaDashboardImage"></img>
             </div>
           </div>
-          {this.state.loadingCompHidden && !this.state.loadedOnce ? <UploadForm onSubmitClicked={(newResult) => this.onSubmitClicked(newResult)} />:null}
+          {this.state.loadingCompHidden && (this.state.loaded==0) ? <UploadForm onSubmitClicked={(newResult, words) => this.onSubmitClicked(newResult, words)} />:null}
           {this.showLoader()}
-          {this.state.loadedOnce ? <p style={{textAlign:"center"}}> Alright lets see what we have here! </p>:null}
+          {(this.state.loaded==1) ? <Adwords adwords={this.state.adwords} onAdwordClicked={(number, selectedAdWord) => this.onAdwordClicked(number, selectedAdWord)}/> :null}
+          {(this.state.loaded==2) ? <CreateAd selectedWord={this.state.selectedWord} onCreateAdClicked={(number,reach,weeks) => this.onCreateAdClicked(number,reach,weeks)}/> :null}
+          {(this.state.loaded==3) ? <UsersReached userNum={this.state.estimatedReach} weeksNum={this.state.weeksNum} adwords={this.state.adwords}/> :null}
+        </div>
         </div>
     )}
 }

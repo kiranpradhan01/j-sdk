@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+#SMLessonPage_adwords {
+    display:flex; 
+    justify-content: space-around; 
+}
+
+#SMLessonPage_adwords_left {
+    display: flex; 
+    flex-direction: column; 
+    margin-right: 10vw; 
+}
+#SMLessonPage_adwords_right {
+    margin-right: 20vw; 
+
+}
+
+#SMLessonPage_adwords_header p {
+    width: 338px;
+    font-family: 'Lato';
+    font-size: 25pt;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: var(--dark);
+}
+
+
+#SMLessonPage_adwords_paraText p {
+    width: 332px;
+    height: 397px;
+    font-family: 'Lato';
+    font-size: 15pt;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    color: var(--dark);
+}
+
+#SMLessonPage_adwords_paraText p span {
+    margin-top: 5vh; 
+}
+
+
+.SMLessonPage_adwords_words_word {
+    width: 326px;
+    opacity: 0.7;
+    font-family: 'Lato', ;
+    font-size: 20pt;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: var(--dark);
+}
+
+.SMLessonPage_adwords_words_word:hover {
+    font-size: 25pt;
+    opacity: 1;
+    font-weight: 800; 
+}
+

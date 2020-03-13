@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+#SMLessonPage_EstimatesComp{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    padding-top: 10vh;  
+}
+
+#SMLessonPage_EstimatesComp header {
+  font-family: 'Lato';
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  color: #979797;
+}
+
+#SMLessonPage_EstimatesComp p { 
+    width: 289px;
+    height: 82px;
+    background-color: var(--dark);
+    font-family: 'Lato';
+    font-size: 60px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.88px;
+    color: var(--dark); 
+} 
+
+#SMLessonPage_EstimatesComp #cost {
+    color: green; 
+}
+
+#errorMessage {
+    color: red; 
+    text-align: center; 
+}
