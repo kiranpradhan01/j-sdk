@@ -69,9 +69,10 @@
 }
 
 #SMLessonsPage_usersReached_adWordsGraph {
-    margin-top: 40vh; 
+    margin-top: 60vh; 
+    margin-left: 15vw; 
 }
 
 #SMLessonsPage_usersReached_lessons {
-    margin-top: 100vh; 
+    margin-top: 140vh;
 }
