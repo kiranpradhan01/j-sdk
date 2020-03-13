@@ -8,15 +8,12 @@ class Adwords extends React.Component {
         this.state = { 
           adwords: this.props.adwords 
         }
-        this.renderAllAdwords = this.renderAllAdwords.bind(this); 
+        this.onClickHandler = this.onClickHandler.bind(this); 
     }
     
-    renderAllAdwords() {
-        return ( 
-            <div>
-
-            </div>
-        )
+    onClickHandler = (e) => {
+        console.log(e.target.innerText);
+        this.props.onAdwordClicked(2, e.target.innerText);
     }
     render() {
       return (
@@ -38,7 +35,7 @@ class Adwords extends React.Component {
 
             <div id="SMLessonPage_adwords_right">  
                     {this.state.adwords.map(adword => (
-                    <p className="SMLessonPage_adwords_words_word">
+                    <p onClick={this.onClickHandler} className="SMLessonPage_adwords_words_word">
                         {adword}
                     </p>
                     ))}

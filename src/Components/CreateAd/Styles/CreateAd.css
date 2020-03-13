@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+#SMLessonPage_createAd_card { 
+    margin: auto;
+    padding-top: 2vh; 
+    padding-bottom: 6vh; 
+    font-family: 'Lato';
+    overflow: hidden;
+}
+
+#SMLessonPage_createAd { 
+    margin-bottom: 50px; 
+
+}
+
+#SMLessonPage_createAd_card:hover {
+  }
+
+#SMLessonPage_createAd_card_left p {
+    margin-bottom: 0.5vh; 
+}
+
+#SMLessonPage_createAd_card_header p {
+    margin-bottom: 2vh;  
+    font-size: 30px;
+    text-align:center; 
+}
+
+#SMLessonPage_createAd_card_header span {
+    text-align:center; 
+    font-size: 20px;
+    color: #1f2f3f; 
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+}
+
+#SMLessonPage_createAd_card_checkboxes {
+    text-align: center;  
+}
+
+#SMLessonPage_createAd_card_checkboxes input { 
+    height: 3vh;
+    width: 2vw; 
+    transform: scale(1.5); 
+}
+
+#SMLessonPage_createAd_card_adTypes {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;  
+}
+
+#SMLessonPage_createAd_card_bannerAds img { 
+    width: 255px;
+    height: 166px;
+}
+
+#SMLessonPage_createAd_card hr {
+    width: 90%; 
+    margin-bottom: 8vh; 
+}
+
+#SMLessonPage_createAd_card_middle  {
+    text-align: center; 
+}
+
+
+#SMLessonPage_createAd_card_middle_sliders header {
+    font-size: 15pt;
+    color: #1f2f3f; 
+    font-family: 'Lato';
+}
+
+#SMLessonPage_createAd_card_middle_sliders input {
+    width: 715px; 
+    margin: auto; 
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: #6c63ff;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#SMLessonPage_createAd_card_middle_sliders input:hover {
+    opacity: 1;
+}
+
+#SMLessonPage_createAd_card_middle_sliders input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e6e6e6;
+    cursor: pointer;
+  }
+
+#SMLessonPage_createAd_card_middle_sliders input::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e6e6e6;
+    cursor: pointer;
+}
+
+#SMLessonPage_createAd_card_middle_sliders_slider2 input {
+    width: 715px; 
+    margin: auto; 
+}
+
+#SMLessonPage_createAd_card_middle_sliders p { 
+    text-align: center; 
+    padding-right: 38vw; 
+    padding-top: 2vh; 
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    color: #979797;
+}
+
+#SMLessonPage_createAd_card_bottom header {
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    color: var(--dark);
+}
+
+#createAdButton {
+    text-align: right; 
+}

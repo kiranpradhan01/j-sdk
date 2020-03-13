@@ -41,6 +41,10 @@
     color: var(--dark);
 }
 
+#SMLessonPage_adwords_paraText p span {
+    margin-top: 5vh; 
+}
+
 
 .SMLessonPage_adwords_words_word {
     width: 326px;
@@ -57,6 +61,7 @@
 
 .SMLessonPage_adwords_words_word:hover {
     font-size: 25pt;
-    opacity: 0.7;
+    opacity: 1;
+    font-weight: 800; 
 }
 

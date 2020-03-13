@@ -10,7 +10,8 @@ class UploadForm extends React.Component {
       super(props); 
         this.state = {
             file: null,
-            adwords: ["Basketball", "Track", "Justin Bieber", "Lebron James", "The Weeknd", "NBA", "Los Angeles Lakers"]
+            adwords: ["Wildlife photography", "Adventure film", "Baltimore", "Instagram", "Hans Zimmer", "Focus (German magazine)", "Business Insider", "Los Angeles Lakers", "Kentucky Derby", 
+            "MailChimp", "The Walt Disney Company", "spicy food", "The Avengers (2012 film)", "Under Armour", "Qdoba Mexican Grill" ]
         }
         this.onChange = this.onChange.bind(this)
        // this.fileUpload = this.fileUpload.bind(this)

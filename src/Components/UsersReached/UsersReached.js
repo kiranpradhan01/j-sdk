@@ -6,7 +6,7 @@ class UsersReached extends React.Component {
     constructor(props) {
       super(props); 
         this.state = { 
-          days: this.props.days, 
+          weeksNum: this.props.weeksNum, 
           userNum: this.props.userNum
         }
     }
@@ -15,8 +15,8 @@ class UsersReached extends React.Component {
       return (
         <div id="SMLessonPage_usersReached">
           <div id="SMLessonPage_usersReached_header">
-            <p id= "SMLessonPage_usersReached_header_tex1"> Over the course of {this.state.days} days, You were able to reach </p>
-            <p id="SMLessonPage_usersReached_header_tex2"> {this.state.userNum} users </p>
+            <p id= "SMLessonPage_usersReached_header_text1"> Over the course of {this.state.weeksNum} weeks, You were able to reach </p>
+            <p id="SMLessonPage_usersReached_header_text2"> {this.state.userNum} users </p>
           </div>
 
           <p id="SMLessonPage_usersReached_subheader"> One of them is yourself! </p>

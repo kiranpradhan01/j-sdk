@@ -6,7 +6,9 @@ import UploadForm from '../../Components/UploadForm/UploadForm.js';
 import SocialDashboard from '../../Pictures/SocialDashboard.png';
 import Adwords from '../../Components/Adwords/Adwords.js'; 
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
-import CircleAds from '../../Components/CircleAds/CircleAds.js'
+import CircleAds from '../../Components/CircleAds/CircleAds.js';
+import UsersReached from '../../Components/UsersReached/UsersReached.js'; 
+import CreateAd from '../../Components/CreateAd/CreateAd.js'; 
 
 
 class SMLessonPage extends React.Component {
@@ -19,6 +21,7 @@ class SMLessonPage extends React.Component {
           adwords: []
         } 
         this.onSubmitClicked = this.onSubmitClicked.bind(this); 
+        this.onAdwordClicked = this.onAdwordClicked.bind(this); 
     }
     /* 
     onFormSubmit(e){
@@ -40,11 +43,25 @@ class SMLessonPage extends React.Component {
       return  post(url, formData,config)
     }
     */ 
+    onCreateAdClicked(number, reach,weeks) { 
+      this.setState({
+        estimatedReach: reach,
+        loaded:number,
+        weeksNum: weeks 
+      })
+    }
     onSubmitClicked(newResult, words) {
       this.setState({ 
         loadingCompHidden: newResult,
         adwords: words
       }); 
+    }
+    onAdwordClicked(number, selectedAdWord) {
+      this.setState({ 
+        loaded: number,
+        selectedWord: selectedAdWord
+      }); 
+      console.log(this.state.loaded); 
     }
     showLoader() {
       const dataSciencetitle = "Our data scientists is on it"; 
@@ -77,11 +94,9 @@ class SMLessonPage extends React.Component {
           </div>
           {this.state.loadingCompHidden && (this.state.loaded==0) ? <UploadForm onSubmitClicked={(newResult, words) => this.onSubmitClicked(newResult, words)} />:null}
           {this.showLoader()}
-          {(this.state.loaded==1) ? <Adwords adwords={this.state.adwords}/> :null}
-        </div>
-        {/* div and container div added for testing CircleAds */}
-        <div id="circleAds">
-          <CircleAds/>
+          {(this.state.loaded==1) ? <Adwords adwords={this.state.adwords} onAdwordClicked={(number, selectedAdWord) => this.onAdwordClicked(number, selectedAdWord)}/> :null}
+          {(this.state.loaded==2) ? <CreateAd selectedWord={this.state.selectedWord} onCreateAdClicked={(number,reach,weeks) => this.onCreateAdClicked(number,reach,weeks)}/> :null}
+          {(this.state.loaded==3) ? <UsersReached userNum={this.state.estimatedReach} weeksNum={this.state.weeksNum}/> :null}
         </div>
         </div>
     )}
