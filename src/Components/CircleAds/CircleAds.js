@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import './CircleAds.css';
+import ProfilePic from '../../Pictures/facebookProfilePic.jpg'; 
 
 class CircleAds extends React.Component {
     constructor(props) {
@@ -15,14 +16,14 @@ class CircleAds extends React.Component {
     appCircles(data) {
       return setTimeout(function() {
         var app = {
-          count : 8,
+          count : 15,
           el : {
             self : document.getElementById('wrap'),
             width : document.getElementById('wrap').clientWidth,
             height: document.getElementById('wrap').clientHeight 
           },
           circle : {
-            radius : ( document.getElementById('wrap').clientWidth / 3 ) - 100,
+            radius : ( document.getElementById('wrap').clientWidth / 2.8),
             centerX : ( document.getElementById('wrap').clientWidth / 3 ),
             centerY : ( document.getElementById('wrap').clientHeight / 3 ),
           },
@@ -48,9 +49,18 @@ class CircleAds extends React.Component {
         
         
           var div = document.createElement('div')
-              div.style.left = (x-25) + 'px';
+              div.style.left = (x+25) + 'px';
               div.style.top = (y-25) + 'px';
-              div.innerHTML = data[i];
+              //div.innerHTML = data[i];
+
+              let p = document.createElement('p');
+              p.setAttribute("id","SMLessonPage_CircleAd_Circle_word") ; 
+              p.innerText = data[i]; 
+
+              div.appendChild(p); 
+
+
+              
               // div.style.display = "inline";
 
           /* 
@@ -70,10 +80,11 @@ class CircleAds extends React.Component {
     }
 
     render() {
-    this.appCircles(this.state.data);
-
+    this.appCircles(this.state.adwords);
         return (
-          <div id='wrap'></div>
+          <div id='wrap'>
+            <img src={ProfilePic} id="SMLessonPage_CircleAd_facebookProfilePic" alt="Facebook Profile Pic"/> 
+          </div>
 
         )
     }

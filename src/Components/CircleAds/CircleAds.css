@@ -115,3 +115,15 @@
     font-size: 22px;
     letter-spacing: 0.63px;
   }
+
+#SMLessonPage_CircleAd_Circle_word {
+    padding-top: 5vh; 
+}
+
+#SMLessonPage_CircleAd_facebookProfilePic {
+    border-radius: 50%; 
+    width: 160px;
+    height: 150px; 
+    margin-left: 30vw;
+    margin-top: 8vh; 
+}

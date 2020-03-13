@@ -16,7 +16,7 @@
 
 #SMLessonPage_usersReached_header_text2 {
     height: 50px; 
-    width: 800px;
+    width: 850px;
     padding-top: 25px; 
     padding-bottom: 75px; 
     margin: auto; 
@@ -70,9 +70,41 @@
 
 #SMLessonsPage_usersReached_adWordsGraph {
     margin-top: 60vh; 
-    margin-left: 15vw; 
+    margin-left: 16vw; 
+}
+
+#SMLessonsPage_usersReached_lessons_header {
+    margin: auto; 
+    padding-top: 25vh;
+    text-align: center; 
+    font-family: 'Lato';
+    width: 745px;
+    height: 41px;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: var(--dark);
+}
+
+#SMLessonsPage_usersReached_lessons_subText  {
+    width: 712px;
+    height: 119px;
+    font-family: 'Lato';
+    margin: auto; 
+    text-align: center; 
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    text-align: center;
+    color: var(--dark);
 }
 
 #SMLessonsPage_usersReached_lessons {
-    margin-top: 140vh;
+    margin-top: 30vh;
 }
