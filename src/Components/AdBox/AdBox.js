@@ -1,5 +1,7 @@
 import React from 'react';
 import './Styles/AdBox.css'; 
+import Slider from '@material-ui/core/Slider';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
 
 // This is the Navigation bar that belongs on the top of the page 
 class AdBox extends React.Component {
@@ -37,7 +39,38 @@ class AdBox extends React.Component {
         this.setState({banner: !this.state.banner});
     }
 
+
+
     render() {
+        const PrettoSlider = withStyles({
+            root: {
+              height: 8,
+            },
+            thumb: {
+              height: 24,
+              width: 24,
+              backgroundColor: '#fff',
+              border: '2px solid currentColor',
+              marginTop: -8,
+              marginLeft: -12,
+              '&:focus,&:hover,&$active': {
+                boxShadow: 'inherit',
+              },
+            },
+            active: {},
+            valueLabel: {
+              left: 'calc(-50% + 4px)',
+            },
+            track: {
+              height: 8,
+              borderRadius: 4,
+            },
+            rail: {
+              height: 8,
+              borderRadius: 4,
+            },
+          })(Slider);
+          
       return (
             <div className="box">
                 <div className="column left">
@@ -62,6 +95,10 @@ class AdBox extends React.Component {
                 <input className="checkbox" type="checkbox" id="video" name="video"></input>
                 <label className="checkboxLabel" for="video">Video Ads</label>
                 </span>
+
+                <Slider></Slider>
+
+                <PrettoSlider valueLabelDisplay="auto"/>
 
                 {/* <div class="slidecontainer">
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></input>

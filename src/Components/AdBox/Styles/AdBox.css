@@ -21,7 +21,7 @@
   }
 
   .inputTitle {
-    font-family: AvenirNext;
+    font-family: 'Lato';
     font-size: 12px;
     font-weight: bold;
     font-stretch: normal;
@@ -33,7 +33,7 @@
   }
 
 .title {
-    font-family: AvenirNext;
+    font-family: 'Lato';
     font-size: 30px;
     font-weight: bold;
     font-stretch: normal;
@@ -58,7 +58,7 @@
 
   .figure {
     background-color: var(--dark);
-    font-family: AvenirNext;
+    font-family: 'Lato';
     font-size: 30px;
     font-weight: bold;
     font-stretch: normal;
@@ -82,7 +82,7 @@
   }
 
   .checkboxLabel {
-    font-family: AvenirNext;
+    font-family: 'Lato';
     font-size: 14px;
     font-weight: bold;
     font-stretch: normal;
