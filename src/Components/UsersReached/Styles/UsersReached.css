@@ -67,3 +67,11 @@
     letter-spacing: 0.63px;
     color: var(--dark);
 }
+
+#SMLessonsPage_usersReached_adWordsGraph {
+    margin-top: 40vh; 
+}
+
+#SMLessonsPage_usersReached_lessons {
+    margin-top: 100vh; 
+}

@@ -1,9 +1,9 @@
-.flex-container {
+.SMLessonPage_Lessons_flex-container {
     display: flex;
     margin: 2em;
 }
 
-.benefits {
+.SMLessonPage_Lessons_benefits {
     background-color:#f0fffb;
     border: solid 3px #00b894;
     width: 493px;
@@ -12,7 +12,7 @@
     margin: auto;
 }
 
-.harms {
+.SMLessonPage_Lessons_harms {
     background-color: #ffebeb;
     border: solid 3px #d63031;
     width: 493px;
@@ -21,7 +21,7 @@
     margin: auto;
 }
 
-.soWhat {
+.SMLessonPage_Lessons_soWhat {
     background-color: #f2f0ff;
     border: solid 3px #6c5ce7;
     width: 808px;
@@ -30,7 +30,7 @@
     margin: auto;
 }
 
-header {
+#SMLessonPage_Lessons header {
     font-family: 'Lato';
     font-size: 24px;
     font-weight: bold;
@@ -43,15 +43,15 @@ header {
     margin: 1em;
 }
 
-.soWhat header {
+.SMLessonPage_Lessons_soWhat header {
     font-size: 28px;
 }
 
-.ready {
+.SMLessonPage_Lessons_ready {
     font-size: 20px;
 }
 
-p {
+#SMLessonPage_Lessons p {
     font-family: 'Lato';
     font-size: 18px;
     font-weight: normal;

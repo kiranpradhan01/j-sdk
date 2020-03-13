@@ -97,6 +97,8 @@ class EstimatesComp extends React.Component {
         let displayReach = ""; 
         if(newReach > 7500000 && newReach <= 10000000) {
             displayReach = "7.5M-10M"
+        } else if (newReach <= 7500000  && newReach > 5000000) {
+            displayReach = "5M-7.5M"
         } else if (newReach <= 5000000  && newReach > 2500000) {
             displayReach = "2.5M-5M"
         } else if (newReach <= 2500000 && newReach > 1000000) {

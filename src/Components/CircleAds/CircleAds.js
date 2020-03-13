@@ -7,6 +7,7 @@ class CircleAds extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            adwords: this.props.adwords,
             data: ["Subaru", "The Bachelor", "Coca-Cola", "Home Cooking", "CNN", "Men's Health Products", "Information School", "Home Cooking"]
         }
     }
@@ -48,8 +49,17 @@ class CircleAds extends React.Component {
         
           var div = document.createElement('div')
               div.style.left = (x-25) + 'px'
-              div.style.top = (y-25) + 'px'
-        
+              div.style.top = (y-25) + 'px'; 
+
+          /* 
+          this.state.data.map(word) {
+            let p = document.createElement('p');
+            p.innerText(word);  
+            div.appendChild(p); 
+          }
+          let p = document.createElement('p'); 
+          */ 
+         
           app.el.self.appendChild(div)
         }
         return app;

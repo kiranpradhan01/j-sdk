@@ -5,9 +5,9 @@ class Lessons extends React.Component {
 
     render() {
         return (
-            <div>
-                <div class="flex-container">
-                    <div class="benefits">
+            <div id="SMLessonPage_Lessons">
+                <div class="SMLessonPage_Lessons_flex-container">
+                    <div class="SMLessonPage_Lessons_benefits">
                         <header>Social Media Ad Targeting can be useful for everyone involved</header>
                         <p>
                             Targeting provides companies the ability to reach specific demographics that their product is made for. <br/><br/>
@@ -15,7 +15,7 @@ class Lessons extends React.Component {
                             When the methods of ad tracking aren’t as uneasy, people benefit from getting ads that are more targeted towards them, so they’ re exposed to the products, services, and content they want to see.
                         </p>
                     </div>
-                    <div class="harms">
+                    <div class="SMLessonPage_Lessons_harms">
                         <header>However, it can also cause harm… </header>
                         <p>In 2016, over 3000 ads were released from Russians Operatives that were used in the 2016 US Presidental Election. <br/><br/>
                         These ads were targeted towards specific groups of people who were passionate for specific topics. The advertisements had elements around them to make them seem more legitament. <br/><br/>
@@ -23,7 +23,7 @@ class Lessons extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div class="soWhat">
+                <div class="SMLessonPage_Lessons_soWhat">
                     <header>So why does this matter for me?</header>
                     <p>According to the Harvard Business Review, there’s evidence to show that what advertisements you see can influence how you see yourself.<br/><br/>
                     Seeing an advertisement about climbing gear when you’re an avid climber will make you feel more like a climber because of what you’re being recommended. <br/><br/>
@@ -32,7 +32,7 @@ class Lessons extends React.Component {
                     This isn’t to say that social media advertising is bad, it’s much more effective to target the users you want to reach rather than hope the one customer you advertise to is actually interested, but it’s important to see how something very important like social media advertisements can become a <strong>vector</strong> for mininformation. <br/><br/>
                     This is <strong>cognition’s</strong> goal, to help you understand the <strong>vectors</strong> of <strong>misinformation</strong> and <strong>disinformation</strong>.We’ re not here to tell you what’s right, but we want you to have the tools you need to determine whether or not the information you’re viewing is credible and reliable.
                     <br/><br/>
-                    <strong class="ready">Ready to learn more?</strong>
+                    <strong class="SMLessonPage_Lessons_ready">Ready to learn more?</strong>
                     </p>
                 </div>
             </div>

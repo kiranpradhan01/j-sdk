@@ -1,5 +1,7 @@
 import React from 'react';
 import './Styles/UsersReached.css'; 
+import CircleAds from '../../Components/CircleAds/CircleAds';
+import Lessons from '../../Components/Lessons/Lessons.js'; 
 
 // This is the the loading component that is rendered onto the page when we are doing work on the backend 
 class UsersReached extends React.Component {
@@ -7,7 +9,8 @@ class UsersReached extends React.Component {
       super(props); 
         this.state = { 
           weeksNum: this.props.weeksNum, 
-          userNum: this.props.userNum
+          userNum: this.props.userNum, 
+          adwords: this.props.adwords
         }
     }
     
@@ -22,6 +25,13 @@ class UsersReached extends React.Component {
           <p id="SMLessonPage_usersReached_subheader"> One of them is yourself! </p>
 
           <p id="SMLessonPage_usersReached_subtext"> Remember all of those adwords that we let you choose from? That actually came from your own ad words that you provided </p>
+          
+          <div id="SMLessonsPage_usersReached_adWordsGraph">
+            <CircleAds adwords={this.state.adwords} /> 
+          </div>
+          <div id="SMLessonsPage_usersReached_lessons">
+            <Lessons/> 
+          </div>
         </div>
 
       );
