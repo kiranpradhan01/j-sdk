@@ -59,7 +59,8 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.75px;
-    align-content: center;
+    justify-content: center;
+    text-align: center;
     margin: 1em;
 }
 

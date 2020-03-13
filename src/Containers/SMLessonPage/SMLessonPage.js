@@ -8,7 +8,7 @@ import Adwords from '../../Components/Adwords/Adwords.js';
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 import UsersReached from '../../Components/UsersReached/UsersReached.js'; 
 import CreateAd from '../../Components/CreateAd/CreateAd.js'; 
-
+import CircleAds from '../../Components/CircleAds/CircleAds.js';
 
 class SMLessonPage extends React.Component {
     constructor(props) {

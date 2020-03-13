@@ -13,7 +13,7 @@ import SaiProfile from '../../Pictures/Profiles/Sai_Profile.png';
 import JojoProfile from '../../Pictures/Profiles/Jojo_Profile.png'; 
 import KiranProfile from '../../Pictures/Profiles/Kiran_Profile.png'; 
 import HomePage_Panel from './HomePage_Panel.js'; 
-import CircleAds from '../../Components/CircleAds/CircleAds';
+
 // This is the Navigation bar that belongs on the top of the page 
 class HomePage extends React.Component {
     constructor(props) {
@@ -109,7 +109,6 @@ class HomePage extends React.Component {
               
               </div>
           </div> 
-          <CircleAds></CircleAds>
           </>
       );
     }

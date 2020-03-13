@@ -12,7 +12,7 @@ class CircleAds extends React.Component {
         }
     }
 
-    appCircles() {
+    appCircles(data) {
       return setTimeout(function() {
         var app = {
           count : 8,
@@ -26,7 +26,7 @@ class CircleAds extends React.Component {
             centerX : ( document.getElementById('wrap').clientWidth / 3 ),
             centerY : ( document.getElementById('wrap').clientHeight / 3 ),
           },
-          methods : {
+          methods : { 
             circle : function(radius, steps, centerX, centerY) {
               var xValues = [centerX];
               var yValues = [centerY];
@@ -48,8 +48,10 @@ class CircleAds extends React.Component {
         
         
           var div = document.createElement('div')
-              div.style.left = (x-25) + 'px'
-              div.style.top = (y-25) + 'px'; 
+              div.style.left = (x-25) + 'px';
+              div.style.top = (y-25) + 'px';
+              div.innerHTML = data[i];
+              // div.style.display = "inline";
 
           /* 
           this.state.data.map(word) {
@@ -68,9 +70,7 @@ class CircleAds extends React.Component {
     }
 
     render() {
-    this.appCircles();
-      
-      
+    this.appCircles(this.state.data);
 
         return (
           <div id='wrap'></div>
