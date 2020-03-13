@@ -7,97 +7,64 @@ class CircleAds extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: ["Subaru", "The Bachelor", "Coca-Cola", "Home Cooking", "CNN", "Men's Health Products", "Information School", "Home Cooking"]
         }
     }
 
-    /* assuming list of adwords is in csv
-    componentDidMount() {
-        d3.csv('data/adwords.csv', (err, data) => {
-            this.setState({
-                data: data
-            })
-        })
-    }*/
+    appCircles() {
+      return setTimeout(function() {
+        var app = {
+          count : 8,
+          el : {
+            self : document.getElementById('wrap'),
+            width : document.getElementById('wrap').clientWidth,
+            height: document.getElementById('wrap').clientHeight 
+          },
+          circle : {
+            radius : ( document.getElementById('wrap').clientWidth / 3 ) - 100,
+            centerX : ( document.getElementById('wrap').clientWidth / 3 ),
+            centerY : ( document.getElementById('wrap').clientHeight / 3 ),
+          },
+          methods : {
+            circle : function(radius, steps, centerX, centerY) {
+              var xValues = [centerX];
+              var yValues = [centerY];
+              for (var i = 0; i < steps; i++) {
+                  xValues[i] = (centerX + radius * Math.cos(2 * Math.PI * i / steps));
+                  yValues[i] = (centerY + radius * Math.sin(2 * Math.PI * i / steps));
+              }
+        
+              return [xValues, yValues];
+            }
+          }
+        }
+
+        var coords = app.methods.circle(app.circle.radius, app.count, app.circle.centerX, app.circle.centerY);
+
+        for ( var i=0; i<app.count; i++ ) {
+          var x = coords[0][i],
+              y = coords[1][i];
+        
+        
+          var div = document.createElement('div')
+              div.style.left = (x-25) + 'px'
+              div.style.top = (y-25) + 'px'
+        
+          app.el.self.appendChild(div)
+        }
+        return app;
+      }, 1);
+      
+    }
 
     render() {
+    this.appCircles();
+      
+      
+
         return (
-            <div class="circle-container">
-              {/* <svg height="110" width="110"> 
-                <circle cx="50" cy="55" r="45" fill="#d8d8d8">
-                <text textAnchor="middle" x="250" y="55">Circle Text</text></circle>
-              </svg>
-              <svg height="110" width="110"> 
-                <circle cx="50" cy="55" r="45" fill="#d8d8d8" strokeWidth="4">
-                <FontAwesomeIcon icon={faUserCircle} /></circle>
-              </svg> */}
+          <div id='wrap'></div>
 
-            
-              <FontAwesomeIcon class="user" icon={faUserCircle} size="3x"/>
-
-              <div class="circle deg0">
-              <div class="circle_inner">
-                <div class="circle_wrapper">
-                <div class="circle_content">Subaru</div>
-                </div>
-              </div>
-              </div>
-
-              <div class="circle deg45">
-              <div class="circle_inner">
-                <div class="circle_wrapper">
-                <div class="circle_content">A circle with a lot more text inside</div>
-                </div>
-              </div>
-              </div>
-
-              <div class="circle deg135">
-              <div class="circle_inner">
-                <div class="circle_wrapper">
-                <div class="circle_content">Deg135</div>
-                </div>
-              </div>
-              </div>
-
-              <div class="circle deg180">
-              <div class="circle_inner">
-                <div class="circle_wrapper">
-                <div class="circle_content">Deg180</div>
-                </div>
-              </div>
-              </div>
-
-              <div class="circle deg225">
-              <div class="circle_inner">
-                <div class="circle_wrapper">
-                <div class="circle_content">Deg225</div>
-                </div>
-              </div>
-              </div>
-
-              <div class="circle deg315">
-              <div class="circle_inner">
-                <div class="circle_wrapper">
-                <div class="circle_content">Deg315</div>
-                </div>
-              </div>
-              </div>
-
-            </div>
-
-            /*<div className="container">
-                {this.state.data.map((adword, i) => {
-                    return(
-                    <div class="circle">
-                    <div class="circle_inner">
-                        <div class="circle_wrapper">
-                        <div class="circle_content">{adword}</div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>)
-                })}
-            </div>*/
         )
     }
 }
