@@ -13,7 +13,7 @@ import CircleAds from '../../Components/CircleAds/CircleAds.js';
 class SMLessonPage extends React.Component {
     constructor(props) {
       super(props); 
-        this.timeout = 2000;
+        this.timeout = 5000;
         this.state = {   
           loadingCompHidden: true,
           loaded: 0, 

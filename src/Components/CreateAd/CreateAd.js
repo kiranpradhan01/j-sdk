@@ -145,7 +145,7 @@ class CreateAd extends React.Component {
                 <hr/>
                 <div id="SMLessonPage_createAd_card_bottom"> 
                     <header> Once you're ready to run, just hit confirm and we will take it from there! </header>
-                    <button type="submit" onClick={this.confirmButtonClicked} style={{marginTop:"40px", marginLeft:"600px"}}> Confirm </button>  
+                    <button type="submit" onClick={this.confirmButtonClicked} style={{marginTop:"40px", marginLeft:"600px", fontFamily:'Lato'}}> Confirm </button>  
                 </div> 
             </div>
         </div>

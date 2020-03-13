@@ -13,12 +13,12 @@
 
 }
 
-#SMLessonPage_createAd_card:hover {
-  }
+/* #SMLessonPage_createAd_card:hover {
+  } */
 
 #SMLessonPage_createAd_card_left p {
     margin-bottom: 0.5vh; 
-}
+} 
 
 #SMLessonPage_createAd_card_header p {
     margin-bottom: 2vh;  
@@ -117,7 +117,7 @@
     text-align: center; 
     padding-right: 38vw; 
     padding-top: 2vh; 
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
