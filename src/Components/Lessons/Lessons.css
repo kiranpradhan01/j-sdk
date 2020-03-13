@@ -1,0 +1,65 @@
+.flex-container {
+    display: flex;
+    margin: 2em;
+}
+
+.benefits {
+    background-color:#f0fffb;
+    border: solid 3px #00b894;
+    width: 493px;
+    height: 420px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.harms {
+    background-color: #ffebeb;
+    border: solid 3px #d63031;
+    width: 493px;
+    height: 420px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.soWhat {
+    background-color: #f2f0ff;
+    border: solid 3px #6c5ce7;
+    width: 808px;
+    height: 715px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+header {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+}
+
+.soWhat header {
+    font-size: 28px;
+}
+
+.ready {
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    align-content: center;
+    margin: 1em;
+}
+

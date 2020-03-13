@@ -25,6 +25,7 @@
 .user {
     width: 100px;
     height: 100px;
+    align-content: center;
 }
 
 .circle:after {
@@ -95,3 +96,19 @@
 .deg180 { transform: translate(-6em); }
 .deg225 { transform: rotate(225deg) translate(6em) rotate(-225deg); }
 .deg315 { transform: rotate(315deg) translate(6em) rotate(-315deg); }
+
+
+#wrap {
+    position:relative;
+  }
+  
+  #wrap > div {
+    position:absolute;
+    border-radius:50%;
+    border: 1px solid black;
+    width:100px;
+    height:100px;
+    background-color: #333;
+    background-size: 100% 100%;
+    
+  }

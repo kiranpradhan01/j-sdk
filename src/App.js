@@ -18,7 +18,7 @@ function App() {
           </div>  
 
           <div id="MobilePage"> 
-              <MobilePage/> 
+              <MobilePage/>
           </div>
       <Switch>
               <Route exact path='/' component={HomePage} />

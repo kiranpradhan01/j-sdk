@@ -6,9 +6,12 @@ import UploadForm from '../../Components/UploadForm/UploadForm.js';
 import SocialDashboard from '../../Pictures/SocialDashboard.png';
 import Adwords from '../../Components/Adwords/Adwords.js'; 
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
+<<<<<<< HEAD
 import CircleAds from '../../Components/CircleAds/CircleAds.js';
 import UsersReached from '../../Components/UsersReached/UsersReached.js'; 
 import CreateAd from '../../Components/CreateAd/CreateAd.js'; 
+=======
+>>>>>>> 114778cdda9ec7aef6f0fe9d6560771eb558e94b
 
 
 class SMLessonPage extends React.Component {
@@ -65,12 +68,12 @@ class SMLessonPage extends React.Component {
     }
     showLoader() {
       const dataSciencetitle = "Our data scientists is on it"; 
-      const dataScincedescription = "While we're analyzing your ad words, let's simulate an ad campaign to show how far simple advertisements can spread through a social media platform by targeting people with specific interests"; 
+      const dataSciencedescription = "While we're analyzing your ad words, let's simulate an ad campaign to show how far simple advertisements can spread through a social media platform by targeting people with specific interests"; 
        if(!this.state.loadingCompHidden) {
         setTimeout(() => {
           this.setState({loadingCompHidden: true, loaded: 1});
         }, this.timeout);
-        return (<LoadingComp title={dataSciencetitle} description={dataScincedescription}/>)
+        return (<LoadingComp title={dataSciencetitle} description={dataSciencedescription}/>)
        } 
        return (null)
     }
