@@ -99,7 +99,16 @@
 
 
 #wrap {
-    position:relative;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 10px 0 rgba(114, 114, 114, 0.5);
+    background-color: #ffffff;
   }
   
   #wrap > div {
