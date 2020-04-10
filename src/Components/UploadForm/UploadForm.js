@@ -4,39 +4,63 @@ import UploadIcon from '../../Pictures/upload.png';
 import axios from 'axios'; 
 import jQuery from 'jquery'; 
 
-// This is the the loading component that is rendered onto the page when we are doing work on the backend 
+// This is the the loading component that is rendered onto the page when we are doing work on the backend
+let fileData;  
 class UploadForm extends React.Component {
     constructor(props) {
       super(props); 
         this.state = {
             file: null,
-            adwords: ["Wildlife photography", "Adventure film", "Baltimore", "Instagram", "Hans Zimmer", "Focus (German magazine)", "Business Insider", "Los Angeles Lakers", "Kentucky Derby", 
+            adwords: [], 
+            adwords2: ["Wildlife photography", "Adventure film", "Baltimore", "Instagram", "Hans Zimmer", "Focus (German magazine)", "Business Insider", "Los Angeles Lakers", "Kentucky Derby", 
             "MailChimp", "The Walt Disney Company", "spicy food", "The Avengers (2012 film)", "Under Armour", "Qdoba Mexican Grill" ]
         }
         this.onChange = this.onChange.bind(this)
        // this.fileUpload = this.fileUpload.bind(this)
        this.onClickHandler = this.onClickHandler.bind(this);
        this.fetchJSON = this.fetchJSON.bind(this);  
+       this.handleFileData = this.handleFileData.bind(this); 
     }
     onChange = e =>  {
         let fileDiv = document.getElementById("SMLessonPage_uploadForm_center_form_fileName");
         fileDiv.innerHTML = " ";  
         this.setState({file:e.target.files[0], loaded: 1}); 
-        console.log(this.state.file); 
         //let fileName = document.createElement("p"); 
         fileDiv.innerHTML = e.target.files[0].name; 
         //fileDiv.appendChild(fileName);  
     }
+    handleFileData = (e) => {
+      const content = fileData.result; 
+      console.log(content); 
+      let contentArr = content.split(','); 
+      contentArr = contentArr.slice(1,-1);
+      let randomCounter = 0; 
+      let myAddWords = []; 
+      for(let i = 0; i < contentArr.length; i++) {
+        if(randomCounter%40 == 1) { 
+          console.log(contentArr[i].slice(6,-1)); 
+          //myAddWords.push(contentArr[i].slice(6,-1))
+          this.setState(prevState => ({
+            adwords: [...prevState.adwords, contentArr[i].slice(6,-1)]
+        }))
+        } 
+        randomCounter++; 
+      }
+      console.log(this.state.adwords); 
+      this.props.onSubmitClicked(false, this.state.adwords);
+     
+    }
     onClickHandler() {
-       console.log(this.state.file.name);
        let myFileName = this.state.file.name; 
+       console.log(myFileName); 
        if(myFileName.includes("json") || myFileName.includes("sql")) { 
+            fileData = new FileReader();
+            fileData.onloadend = this.handleFileData;
+            let jsonData = fileData.readAsText(this.state.file);
             const data = new FormData(); 
+            console.log('data: ' + jsonData);
             data.append('file', this.state.file); 
-            console.log(data);
-            console.log(this.state.file);  
-            console.log(this.state.adwords); 
-            this.props.onSubmitClicked(false, this.state.adwords);
+            //this.props.onSubmitClicked(false, this.state.adwords);
             this.fetchJSON(data); 
        } else {
            let errorHandlingDiv = document.getElementById("SMLessonPage_uploadForm_center_form_eror"); 

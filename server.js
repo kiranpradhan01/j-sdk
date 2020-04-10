@@ -40,7 +40,13 @@ app.post('/upload',function(req, res) {
         if (err) throw err;
       
         for (const file of files) {
-          fs.unlink(path.join(directory, file), err => {
+          console.log('=========================================')
+          console.log(file)
+          console.log('=========================================')
+          // fs.unlink(path.join(directory, file), err => {
+          //   if (err) throw err;
+          // });
+          fs.unlink(print(file), err => {
             if (err) throw err;
           });
         }
