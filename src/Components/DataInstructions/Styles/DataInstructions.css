@@ -1,0 +1,43 @@
+#DataInstructions {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    margin-bottom: 5vh; 
+}
+
+#DataInstructions > header {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40pt; 
+    text-align: center;
+    margin: 5vh; 
+}
+
+#DataInstructions img {
+    height: 200px; 
+    width: 350px; 
+    display: block; 
+    margin: auto; 
+}
+#DataInstructions > p  {
+    font-size: 20pt; 
+    text-align: center; 
+}
+
+#DataInstructions_List > li {
+    list-style-type: none;
+    font-weight: 100;
+    font-size: 15pt; 
+    margin: 5vh;
+}
+
+#DataInstructions_List  img {
+    height: 600px; 
+    width: 900px;
+    display: block;
+    margin: auto;  
+}
+
+#DataInstructions_List > li #DataInstructions_last_element {
+    margin-bottom: 2vh; 
+}

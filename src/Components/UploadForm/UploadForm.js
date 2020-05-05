@@ -3,6 +3,7 @@ import './Styles/UploadForm.css';
 import UploadIcon from '../../Pictures/upload.png'; 
 import axios from 'axios'; 
 import jQuery from 'jquery'; 
+import DataInstructions from '../DataInstructions/DataInstructions.js'; 
 
 // This is the the loading component that is rendered onto the page when we are doing work on the backend
 let fileData;  
@@ -12,6 +13,7 @@ class UploadForm extends React.Component {
         this.state = {
             file: null,
             adwords: [], 
+            modal: this.props.modal, 
             adwords2: ["Wildlife photography", "Adventure film", "Baltimore", "Instagram", "Hans Zimmer", "Focus (German magazine)", "Business Insider", "Los Angeles Lakers", "Kentucky Derby", 
             "MailChimp", "The Walt Disney Company", "spicy food", "The Avengers (2012 film)", "Under Armour", "Qdoba Mexican Grill" ]
         }
@@ -19,7 +21,8 @@ class UploadForm extends React.Component {
        // this.fileUpload = this.fileUpload.bind(this)
        this.onClickHandler = this.onClickHandler.bind(this);
        this.fetchJSON = this.fetchJSON.bind(this);  
-       this.handleFileData = this.handleFileData.bind(this); 
+       this.handleFileData = this.handleFileData.bind(this);
+       this.renderDataInstructions = this.renderDataInstructions.bind(this);  
     }
     onChange = e =>  {
         let fileDiv = document.getElementById("SMLessonPage_uploadForm_center_form_fileName");
@@ -71,6 +74,14 @@ class UploadForm extends React.Component {
        }  
     }
 
+    renderDataInstructions() {
+      this.setState({
+        modal: true 
+      }); 
+
+      this.props.onModalClicked(this.state.modal);
+    }
+
     fetchJSON = (data) => {
         axios.post("http://localhost:8000/upload", data, { // receive two parameter endpoint url ,form data 
         })
@@ -109,7 +120,8 @@ class UploadForm extends React.Component {
             <header> Upload your Facebook Data JSON File </header>
             <p> Facebook (and other social media sites) take note of what you might like and what interests you have, 
                 that way they can give you ads that align with your interest the most! We’d like to show you what yours are 
-                and help you understand them better. </p>
+                and help you understand them better. Don't worry, all facebook data remains private and will be deleted 
+                after the activity automatically! </p>
             <form id="SMLessonPage_uploadForm_center_form">  
                 <div id="SMLessonPage_uploadForm_center_form_area">
                 <div id="something">
@@ -123,7 +135,7 @@ class UploadForm extends React.Component {
             <div id="SMLessonPage_uploadForm_center_form_eror">
             </div>
             <div> 
-                <p> Dont know what that is? <a href="https://www.cnbc.com/2018/03/23/how-to-download-a-copy-of-facebook-data-about-you.html"> Click Here </a> </p>
+                <p> Dont know what that is? <span onClick={this.renderDataInstructions} style={{color:"blue", textDecoration:"underline"}}> Click Here </span> </p>
             </div> 
             </div>
 

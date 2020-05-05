@@ -6,8 +6,11 @@ import NavBar2 from './Components/NavBar2/NavBar2.js';
 import HomePage from './Containers/HomePage/HomePage.js'; 
 import MobilePage from './Containers/MobilePage/MobilePage.js'
 import SMLessonPage from './Containers/SMLessonPage/SMLessonPage.js'; 
+import SMLessonIntro from './Containers/SMLessonPage/SMLessonIntro.js'; 
+import DataInstructions from './Components/DataInstructions/DataInstructions.js'; 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
+import ModalComp from './Components/ModalComp/ModalComp.js'; 
+import LandingPage from './Containers/LandingPage/LandingPage.js';  
 function App() {
   return (
     <Router>
@@ -21,11 +24,13 @@ function App() {
               <MobilePage/>
           </div>
       <Switch>
-              <Route exact path='/' component={HomePage} />
-              <Route path='/information' component={MobilePage} />
+              <Route exact path='/' component={LandingPage} />
               <Route path='/about' component={MobilePage} />
-              <Route path='/works' component={MobilePage} />
-              <Route path='/topics' component={SMLessonPage} />
+              <Route path='/goals' component={MobilePage} />
+              <Route path='/contact' component={MobilePage} />
+              <Route path='/topics/socialmedia' component={SMLessonPage} />
+              <Route path='/topics/spread' component={MobilePage} />
+              <Route path='/topics/seo' component={MobilePage} />
       </Switch>
       </header>
       </div>

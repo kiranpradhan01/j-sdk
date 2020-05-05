@@ -1,0 +1,64 @@
+#LandingPage_Header header { 
+  margin: auto; 
+  text-align: center; 
+  width: 50vw;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5c699e;
+  margin-top: 4vh; 
+  margin-bottom: 4vh; 
+}
+
+#LandingPage_Header p {
+    margin: auto; 
+    width: 50vw; 
+    font-family: proxima-nova, sans-serif;
+    font-size: 20px;
+    text-align: center; 
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--dark);
+}
+
+#LandingPage_buttons {
+    text-align: center; 
+    margin: 5vh; 
+}
+
+#LandingPage_buttons {
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+#LandingPage_buttons button {
+    color: white; 
+    background-color: #5c699e; 
+    width: 15vw; 
+    border-radius: 10px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+
+}
+
+
+#LandingPage img {
+    width: 1000px; 
+    height: 700px; 
+    display: block; 
+    margin: auto; 
+}

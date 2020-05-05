@@ -32,6 +32,8 @@ class UsersReached extends React.Component {
             <header id="SMLessonsPage_usersReached_lessons_header"> All of these terms allow advertisers to reach you </header>
             <div id="SMLessonsPage_usersReached_lessons_subText"> These can be used for good, but it’s important to recognize how easy it is to be targeted by advertisers directly or indirectly. </div>
             <Lessons/> 
+
+            <iframe style={{margin:"auto"}} src="https://public.tableau.com/views/SocialMediaandMisinformation/Dashboard1??:showVizHome=no&:embed=true" width="1000" height="955"></iframe>
           </div>
         </div>
 

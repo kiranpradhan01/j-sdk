@@ -1,0 +1,27 @@
+#SMLessonIntro_dots > div {
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#SMLessonIntro_dots {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}   
+
+#SMLessonIntro {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+#SMLessonIntro_Left { 
+    display: flex; 
+    justify-content: space-around;
+}
+
+#SMLessonIntro_circles > div {
+    
+}
