@@ -7,7 +7,7 @@
       visibility: visible; 
     }
 
-    #SMLessonPage {
+    #SMLessonContainer {
         display: none; 
     }
     #HomePage {
@@ -16,4 +16,5 @@
     #NavBar {
         visibility: hidden; 
     }
+     
 }

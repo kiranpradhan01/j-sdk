@@ -9,19 +9,177 @@
 #SMLessonIntro_dots {
     display: flex; 
     flex-direction: column; 
-    justify-content: space-between; 
+    justify-content: space-evenly; 
+    margin: 8vw;  
+}  
+
+#SMLessonIntro_dots > #SMLessonIntro_cicles_dot1 {
+    background-color: #5c699e;
 }   
 
 #SMLessonIntro {
     display: flex; 
-    justify-content: space-between; 
+    justify-content: space-around; 
+    height: -webkit-fill-available; 
+    overflow: hidden;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
 }
 
 #SMLessonIntro_Left { 
     display: flex; 
-    justify-content: space-around;
+    justify-content: space-around; 
+    width: 65%;
 }
 
-#SMLessonIntro_circles > div {
-    
+#SMLessonIntro_Right {
+}
+
+@media only screen and (min-width: 1500px) {
+    #SMLessonIntro_circle {
+        display: none;  
+    }
+
+    #SMLessonIntro_Right {
+        display: flex; 
+        align-items: center;
+    }
+
+    #SMLessonIntro_Right > #SMLessonIntro_buttons  {
+        margin-top: 50vh;
+        margin-right: 8vw;
+    }
+    #SMLessonIntro_Right > #SMLessonIntro_buttons  > p {
+        margin-right:8vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #SMLessonIntro_circle {
+        display: none;  
+    }
+
+    #SMLessonIntro_Right > #SMLessonIntro_buttons  {
+        margin-top: 50vh;
+    }
+}
+
+
+#SMLessonIntro_texts {
+    display: flex; 
+    flex-direction: column;  
+}
+
+
+#SMLessonIntro_text > p {
+    margin-top: 2vh; 
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18pt;
+    width: 70%; 
+}
+
+#SMLessonIntro_header {
+    width: 753px;
+    height: 145px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #5c699e;
+    margin-top: 18vh; 
+}
+#SMLessonIntro_circle {
+    margin:auto;  
+}
+#SMLessonIntro_circle1 {
+    width: 300px;
+    height: 300px;
+    opacity: 30%;
+    background-color: #5c699e;
+    border-radius: 50%;
+    display: inline-block;
+    position:  relative; 
+    margin-right: 1vw;
+    margin-top: 10vh; 
+    right: 7vw; 
+}
+
+#SMLessonIntro_circle2 {
+    width: 148px;
+    height: 148px;
+    opacity: 30%;
+    background-color: #5c699e;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute; 
+    right: 14vw;
+    margin-top: 12vh;  
+}
+
+#SMLessonIntro_circle3 {
+    width: 231px;
+    height: 231px;
+    opacity: 30%;
+    background-color: #5c699e;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative; 
+    bottom: 8vh;
+    right: 3vw;       
+}
+
+#SMLessonIntro_circle4 {
+    width: 231px;
+    height: 231px;
+    opacity: 30%;
+    background-color: #5c699e;
+    position: absolute; 
+    border-radius: 50%;
+    display: inline-block; 
+    bottom: 40vh; 
+    right: 12vw;
+}
+
+#SMLessonIntro_circle5 {
+    width: 250px;
+    height: 250px;
+    opacity: 30%;
+    background-color: #5c699e;
+    position: absolute; 
+    border-radius: 50%;
+    display: inline-block; 
+    bottom: 20vh;
+    right: 8vw;
+}
+
+#SMLessonIntro_buttons  {
+    margin-top: 5vh; 
+    margin-right: 8vw;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+#SMLessonIntro_buttons > button {
+    background-color: #5c699e;
+    border-radius: 20px;
+    width: 191px;
+    height: 47px;
+}
+
+#SMLessonIntro_buttons > p {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15pt;
+    margin:auto;
+    color: #5c699e;
+}
+
+#SMLessonIntro_buttons > p:hover {
+    color: gray; 
 }

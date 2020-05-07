@@ -12,7 +12,7 @@ class NavBar extends React.Component {
     render() {
       return (
         <div id="navbar2">
-            <div id="cognition"><Link to={'/'} id="cognition"> cognition </Link></div>
+            <div id="cognition"><Link to={'/'} id="cognition"> Cognition </Link></div>
             <a class="navbar2_header"><Link to={'/about'} class="navbar2_header"> About Us</Link> </a> 
             <a class="navbar2_header"><Link to={'/goals'} class="navbar2_header">Our Goal</Link></a> 
             <a class="navbar2_header"><Link to={'/contact'} class="navbar2_header">Contact</Link></a>
