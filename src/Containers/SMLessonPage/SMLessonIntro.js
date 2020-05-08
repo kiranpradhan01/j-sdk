@@ -18,14 +18,6 @@ class SMLessonIntro extends React.Component {
         <div id = "SMLessonIntro">
 
             <div id="SMLessonIntro_Left">
-                <div id="SMLessonIntro_dots">
-                    <div id ="SMLessonIntro_cicles_dot1"> </div>
-                    <div id ="SMLessonIntro_cicles_dot2"> </div>
-                    <div id ="SMLessonIntro_cicles_dot3"> </div>
-                    <div id ="SMLessonIntro_cicles_dot4"> </div>
-                    <div id ="SMLessonIntro_cicles_dot5"> </div>
-                </div>
-
                 <div id="SMLessonIntro_texts">
 
                     <div id="SMLessonIntro_header"> Social Media </div>
@@ -33,15 +25,14 @@ class SMLessonIntro extends React.Component {
 
                     <div id="SMLessonIntro_text"> 
 
-                        <p id="SMLessonIntro_text_1"> This is the main section where content will be. 
-                        Put your sick content here so that people can be educated and that this will 
-                        all work to actually help educate people and change the world ok this is probably 
-                        enough sample text. </p>
+                        <p id="SMLessonIntro_text_1"> Welcome to your first lesson on Social Media Ads and how it affects
+                        misinformation! For this lesson, we are going to focus on how ad interests in your facebook data
+                        can help anything reach you through social media. First step will be to upload your own Facebook data (Don't worry, 
+                        it's all a secure process). </p>
 
-                        <p id="SMLessonIntro_text_2"> This is the main section where content will be. 
-                        Put your sick content here so that people can be educated and that this will 
-                        all work to actually help educate people and change the world ok this is probably 
-                        enough sample text. </p>
+                        <p id="SMLessonIntro_text_2"> Next, we are going to give you a bunch of random words. You are going to go ahead and 
+                        create your own ad and try to get maximum user engagement. Create an ad for a topic you are not familiar with and 
+                        see how that ad reaches a large audience and how that relates to all the things we read on Social Media. </p>
                     </div>
                 </div>
             </div>
@@ -53,11 +44,6 @@ class SMLessonIntro extends React.Component {
                     <div id="SMLessonIntro_circle3"></div>
                     <div id="SMLessonIntro_circle4"></div>
                     <div id="SMLessonIntro_circle5"></div>
-                </div>
-
-                <div id="SMLessonIntro_buttons"> 
-                    <p> Back </p>
-                    <button onClick={this.changeComponent}> Continue </button>
                 </div>
             </div>
 

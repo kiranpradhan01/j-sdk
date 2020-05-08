@@ -76,7 +76,8 @@
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18pt;
+    font-size: 17pt;
+    color: #1f2f3f; 
     width: 70%; 
 }
 
@@ -90,8 +91,8 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #5c699e;
-    margin-top: 18vh; 
+    color: #0075C4;
+    margin-top: 12vh; 
 }
 #SMLessonIntro_circle {
     margin:auto;  
@@ -100,7 +101,7 @@
     width: 300px;
     height: 300px;
     opacity: 30%;
-    background-color: #5c699e;
+    background-color: #0075C4;
     border-radius: 50%;
     display: inline-block;
     position:  relative; 
@@ -113,7 +114,7 @@
     width: 148px;
     height: 148px;
     opacity: 30%;
-    background-color: #5c699e;
+    background-color: #0075C4;
     border-radius: 50%;
     display: inline-block;
     position: absolute; 
@@ -125,7 +126,7 @@
     width: 231px;
     height: 231px;
     opacity: 30%;
-    background-color: #5c699e;
+    background-color: #0075C4;
     border-radius: 50%;
     display: inline-block;
     position: relative; 
@@ -137,7 +138,7 @@
     width: 231px;
     height: 231px;
     opacity: 30%;
-    background-color: #5c699e;
+    background-color: #0075C4;
     position: absolute; 
     border-radius: 50%;
     display: inline-block; 
@@ -149,7 +150,7 @@
     width: 250px;
     height: 250px;
     opacity: 30%;
-    background-color: #5c699e;
+    background-color: #0075C4;
     position: absolute; 
     border-radius: 50%;
     display: inline-block; 

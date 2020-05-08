@@ -115,6 +115,7 @@ class SMLessonPage extends React.Component {
           {(this.state.loaded==1) ? <Adwords adwords={this.state.adwords} onAdwordClicked={(number, selectedAdWord) => this.onAdwordClicked(number, selectedAdWord)}/> :null}
           {(this.state.loaded==2) ? <CreateAd selectedWord={this.state.selectedWord} onCreateAdClicked={(number,reach,weeks) => this.onCreateAdClicked(number,reach,weeks)}/> :null}
           {(this.state.loaded==3) ? <UsersReached userNum={this.state.estimatedReach} weeksNum={this.state.weeksNum} adwords={this.state.adwords}/> :null}
+    
         </div>
         </div>
     )}

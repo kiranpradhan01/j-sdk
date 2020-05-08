@@ -6,6 +6,8 @@
     position: relative; 
     top: 0; 
     left: 0; 
+    margin-right: 70vw;
+    margin-top: 20vh;  
 } 
 
 #SMLessonPage_datascientist_text header {

@@ -1,0 +1,53 @@
+#SMLessonContainer {
+    display: flex; 
+    justify-content: space-between; 
+    overflow-x: hidden; 
+}
+
+
+#SMLessonContainer_dots {
+    display: flex; 
+    flex-direction: column; 
+    margin: 10vh;
+}  
+
+#SMLessonContainer_dots > div {
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 6vh;
+}
+
+#SMLessonContainer_dots > #SMLessonContainer_cicles_dot1 {
+    background-color: #0075C4;
+}   
+
+
+#SMLessonContainer_buttons  {
+    margin-bottom: 10vh; 
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-around;  
+}
+
+#SMLessonContainer_buttons > button {
+    background-color: #0075C4;
+    border-radius: 20px;
+    width: 191px;
+    height: 47px;
+}
+
+#SMLessonContainer_buttons > p {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15pt;
+    margin-left: 50vw; 
+    color: #5c699e;
+}
+
+#SMLessonContainer_buttons > p:hover {
+    color: gray; 
+}

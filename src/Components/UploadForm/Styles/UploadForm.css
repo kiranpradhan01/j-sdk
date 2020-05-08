@@ -1,14 +1,16 @@
 
 #SMLessonPage_uploadForm {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 8vh;
+    display: flex; 
+    justify-content: center;
+    margin-top: 30vh;
+    margin-right: 15vw; 
 }
 
 #SMLessonPage_uploadForm_textLeft p {
     width: 338px;
     height: 119px;
-    font-family: 'Lato', ;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
     font-size: 25px;
     font-weight: bold;
     font-stretch: normal;
@@ -21,7 +23,8 @@
 #SMLessonPage_uploadForm_center {
     width: 500px;
     height: 238px;
-    font-family: 'Lato', ;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
     font-size: 20px;
     font-weight: 500;
     font-stretch: normal;
@@ -29,6 +32,15 @@
     line-height: normal;
     letter-spacing: 0.63px;
     color: var(--dark);
+    margin: 0vw 4vw;
+}
+
+#SMLessonPage_uploadForm_center > header {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 800;
+    color: #0075C4; 
 }
 
 #SMLessonPage_uploadForm_center_form {
@@ -78,7 +90,8 @@
 #SMLessonPage_uploadForm_disclaimer {
     width: 180px;
     height: 162px;
-    font-family: 'Lato', ;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -86,4 +99,14 @@
     line-height: normal;
     letter-spacing: 0.5px;
     color: var(--dark);
+}
+
+#SMLessonPage_uploadForm button  {
+    background-color: #0075C4; 
+    border-radius: 20px;
+    width: 191px;
+    height: 47px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
 }

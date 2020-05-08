@@ -2,66 +2,91 @@
 
 #SMLessonPage_adwords {
     display:flex; 
-    justify-content: space-around; 
+    flex-direction: column; 
+    margin: 5vw; 
+    text-align: center;
 }
 
-#SMLessonPage_adwords_left {
+#SMLessonPage_adwords_top {
     display: flex; 
     flex-direction: column; 
     margin-right: 10vw; 
+    margin-left: 8vw; 
 }
-#SMLessonPage_adwords_right {
-    margin-right: 20vw; 
+#SMLessonPage_adwords_bottom {
+    margin: 10vw; 
+    display: flex; 
+    flex-flow: wrap; 
 
 }
+
+#SMLessonPage_adwords_card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+    background-color:#0075C4;
+    margin-right: 5vw;
+    margin-bottom: 5vw;  
+}
+
+#SMLessonPage_adwords_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    opacity: 0.7;  
+  }
+
+#SMLessonPage_adwords_card:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 #SMLessonPage_adwords_header p {
-    width: 338px;
-    font-family: 'Lato';
+    width: 800px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    color: #0075C4;
     font-size: 25pt;
     font-weight: bold;
     font-stretch: normal;
-    font-style: normal;
     line-height: normal;
     letter-spacing: 0.94px;
-    color: var(--dark);
 }
 
 
 #SMLessonPage_adwords_paraText p {
-    width: 332px;
-    height: 397px;
+    width: 800px;
+    height: 10vh;
     font-family: 'Lato';
     font-size: 15pt;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
     letter-spacing: 0.63px;
     color: var(--dark);
 }
 
+#SMLessonPage_adwords_paraText {
+    height: 8vh; 
+}
+
 #SMLessonPage_adwords_paraText p span {
-    margin-top: 5vh; 
 }
 
 
 .SMLessonPage_adwords_words_word {
-    width: 326px;
-    opacity: 0.7;
-    font-family: 'Lato', ;
+    width: 200px;
+    opacity: 1;
+    font-family: proxima-nova, sans-serif;
     font-size: 20pt;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.94px;
-    color: var(--dark);
+    color: white; 
+    height: 100px; 
+    padding-top: 6vh;  
+    margin: auto;  
 }
 
 .SMLessonPage_adwords_words_word:hover {
-    font-size: 28pt;
-    opacity: 1;
-    font-weight: 800; 
 }
 
