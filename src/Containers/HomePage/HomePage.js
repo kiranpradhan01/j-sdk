@@ -83,8 +83,10 @@ class HomePage extends React.Component {
                     <div class="HomePage_left">
                       <div class="HomePage_paraText" id="HomePage_paraText_4"> 
                         <header> <span class="green_text"> Who </span> Are We </header>
-                        <p> We're a team of four students at the Information School. We have experience in front-end development, back-end development, design, research and all the little niches in between those topics. We're pretty  
-                            to work with, if we do say so ourselves. If you're interested in working with us, drop us a line! 
+                        <p> 
+                          We're a team of four students at the Information School. We have experience in front-end development, back-end development, design, research and all the little niches in between those topics.
+                          Although we have been developing this platform for the past 2 quarters, we are officially handing this project back to our sponsors so that future students may be able to continue our work.
+                          If you are interested in further developing on these topics, please contact Rolf Hapel from the Center for an Informed Public at <a href="mailto:rhapel@uw.edu">rhapel@uw.edu</a>.
                         </p>
                         <ContactButton text={contactButton_text}/> 
                       </div>
