@@ -34,6 +34,8 @@
 #LearnPage_definitions_Text {
     display: inline-block;
     text-align: left;
+    margin-left: 25%;
+    margin-right: 20%;
 }
 
 #LearnPage_definitions_Text h2 {
@@ -88,7 +90,7 @@
 #LearnPage_topics {
     position: relative;
     z-index: 2;
-    margin-top: 15em;
+    margin-top: 10em;
 }
 
 #LearnPage_topics h2 {
@@ -185,6 +187,7 @@
     background-color: white;
     color: #746CF6;
 }
+
 button:hover {
     opacity:1.0;
     box-shadow:none;
@@ -198,8 +201,7 @@ button:hover {
 }
 
 .img-select {
-    width: 458px;
-    height: 371px;
+    
 }
 
 .img-decide {
@@ -211,11 +213,6 @@ button:hover {
     position: absolute;
     top: 0px;
     z-index: 1;
-}
-
-.center {
-    width: 90%;
-    margin-left: 5%;
 }
 
 /* .topButton {
