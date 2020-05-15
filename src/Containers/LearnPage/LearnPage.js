@@ -95,7 +95,6 @@ class LearnPage extends React.Component {
                         <img src={Slant} class="background-slant"></img>
                     </div>
                 </div>
-
             </div>
         )
     }
