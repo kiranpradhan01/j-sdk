@@ -6,14 +6,20 @@ import SocialMediaDashboard from "../../Pictures/SocialMediaDashboard.png";
 import Global from "../../Pictures/Global.png";
 import Search from "../../Pictures/Search.png";
 import Slant from "../../Pictures/purple-slant.png";
+import Footer from "../../Components/Footer/Footer.js"
 
 class LearnPage extends React.Component {
+    handleClick(id) {
+        let element = document.getElementById(id);
+        element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+      }
+
     render() {
         return(
             <div>
                 <div id="LearnPage_introduction"> 
                     <div id="LearnPage_introduction_Text">
-                        <header>Your Crash Course on Misinformation</header>
+                        <header id="top">Your Crash Course on Misinformation</header>
                         <p>The spread of misleading and inaccurate information online is a growing problem that has proven to impact people’s decisions, from everyday purchases to democratic elections. Before we jump into the details, let’s brush up on some key terms that we will be referencing.</p>
                     </div> 
                     <div> 
@@ -88,12 +94,13 @@ class LearnPage extends React.Component {
                             </div>
                         </div>
                         <div class="center">
-                            <button id="to-top-button">Back to the top!</button>
+                            <button onClick={() => this.handleClick("top")} id="to-top-button">Back to the top!</button>
                         </div>
                     </div>
                     <div>
                         <img src={Slant} class="background-slant"></img>
                     </div>
+                    <Footer/>
                 </div>
             </div>
         )
