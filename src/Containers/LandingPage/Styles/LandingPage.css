@@ -11,7 +11,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #5c699e;
+  color: #4A47DF;
   margin-top: 4vh; 
   margin-bottom: 4vh; 
 }
@@ -27,7 +27,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--dark);
+    color: #1F2F3F;
 }
 
 #LandingPage_buttons {
@@ -42,7 +42,7 @@
 
 #LandingPage_buttons button {
     color: white; 
-    background-color: #5c699e; 
+    background-color: #5C80FF; 
     width: 15vw; 
     border-radius: 10px;
     font-family: proxima-nova, sans-serif;
