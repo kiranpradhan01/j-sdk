@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+.center {
+    text-align: center;
+}
+
 /* Introduction */
 #LearnPage_introduction {
     display: flex;
@@ -32,8 +36,10 @@
 
 /* Definitions */
 #LearnPage_definitions_Text {
-    text-align: left;
     display: inline-block;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 20%;
 }
 
 #LearnPage_definitions_Text h2 {
@@ -88,7 +94,7 @@
 #LearnPage_topics {
     position: relative;
     z-index: 2;
-    margin-top: 5em;
+    margin-top: 10em;
 }
 
 #LearnPage_topics h2 {
@@ -109,6 +115,7 @@
 
 #LearnPage_topics_container {
     display: flex;
+    margin-top: 3rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
@@ -119,6 +126,7 @@
     width: 379px;
     height: 635px;
     border-radius: 10px;
+    position: relative;
 }
 
 #purple-background {
@@ -157,6 +165,26 @@
     font-size: 15px;
     font-family: proxima-nova, sans-serif;
     letter-spacing: 0.63px;
+    position: absolute center;
+    bottom: 0;
+}
+
+#learn-more-button-pink {
+    padding: 11px 23px;
+    background: #993850;
+    font-size: 15px;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 0.63px;
+    position: absolute center;
+}
+
+#learn-more-button-green {
+    padding: 11px 23px;
+    background: #03CABF;
+    font-size: 15px;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 0.63px;
+    position: absolute center;
 }
 
 #to-top-button {
@@ -167,10 +195,13 @@
     font-family: proxima-nova, sans-serif;
     letter-spacing: 0.63px;
     margin-top: 5em;
+    background-color: white;
+    color: #746CF6;
 }
 
-.center {
-    text-align: center;
+button:hover {
+    opacity:1.0;
+    box-shadow:none;
 }
 
 /* Images */
@@ -181,8 +212,7 @@
 }
 
 .img-select {
-    width: 458px;
-    height: 371px;
+    
 }
 
 .img-decide {

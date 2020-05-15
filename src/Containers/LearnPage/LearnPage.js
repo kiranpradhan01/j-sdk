@@ -12,7 +12,11 @@ class LearnPage extends React.Component {
     handleClick(id) {
         let element = document.getElementById(id);
         element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-      }
+    }
+
+    rerouteToSocial() {
+        window.location.assign('/topics/socialmedia');
+    }
 
     render() {
         return(
@@ -45,7 +49,7 @@ class LearnPage extends React.Component {
                         <h2>Aren't they the same?</h2>
                         <p>Yes and no. Misinformation encompasses disinformation, but not all misinformation is disinformation. The main difference here is <strong>intent</strong>. Was something intentionally meant to decieve someone, or was it an error in relaying a piece of factual information? The line can feel very blurry, but one way we remember the difference is with this mnemonic device: <br></br>
                         <br></br>
-                        For <strong>Misnformation</strong>, think <strong>mistake</strong>. For <strong>Disinformation</strong>, think <strong>decieve</strong>.</p>
+                        For <strong>Misinformation</strong>, think <strong>mistake</strong>. For <strong>Disinformation</strong>, think <strong>decieve</strong>.</p>
                     </div> 
                 </div>
 
@@ -69,7 +73,7 @@ class LearnPage extends React.Component {
                                     <p>It can be useful, but unsettling to see an ad specifically targeted to you, but how can that impact how you think about yourself? Learn about how targeted social media ads can be a vector for misinformation.</p>
                                 </div>
                                 <div class="center">
-                                    <button id="learn-more-button">View Topic</button>
+                                    <button id="learn-more-button" onClick={() => this.rerouteToSocial()}>View Topic</button>
                                 </div>
                             </div>
                             <div class="topic-container center" id="pink-background">
@@ -79,17 +83,19 @@ class LearnPage extends React.Component {
                                     <p>In times of crisis and uncertainty, it’s easy to grasp onto whatever information you can find, factual or not. Learn about how information turn into misinformation. <br></br> <br></br></p>
                                 </div>
                                 <div class="center">
-                                    <button id="learn-more-button">Coming Soon!</button>
+                                    <button id="learn-more-button-pink">Coming Soon!</button>
                                 </div>
                             </div>
                             <div class="topic-container center" id="green-background">
                                 <div><img src={Search} alt="Girl holding large magnifying glass up to webpage" class="img-learn-more"></img></div>
                                 <div id="topic-content">
                                     <h1>Search Engines and You</h1>
-                                    <p>Your search engine of choice might not say much about you, but how does the algorithm underlying search engines influence what search results you see?  Learn about how search engine algorithms can result in being misinformed.</p>
+                                    <p>How does the algorithm underlying search engines influence what search results you see?  Learn about how search engine algorithms can result in being misinformed.
+                                        <br></br><br></br>
+                                    </p>
                                 </div>
                                 <div class="center">
-                                    <button id="learn-more-button">Coming Soon!</button>
+                                    <button id="learn-more-button-green">Coming Soon!</button>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +108,6 @@ class LearnPage extends React.Component {
                     </div>
                     <Footer/>
                 </div>
-
             </div>
         )
     }
