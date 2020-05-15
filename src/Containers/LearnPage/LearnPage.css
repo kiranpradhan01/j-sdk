@@ -88,7 +88,7 @@
 #LearnPage_topics {
     position: relative;
     z-index: 2;
-    margin-top: 5em;
+    margin-top: 15em;
 }
 
 #LearnPage_topics h2 {
@@ -160,14 +160,34 @@
     letter-spacing: 0.63px;
 }
 
+#learn-more-button-pink {
+    padding: 11px 23px;
+    background: #993850;
+    font-size: 15px;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 0.63px;
+}
+
+#learn-more-button-green {
+    padding: 11px 23px;
+    background: #03CABF;
+    font-size: 15px;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 0.63px;
+}
+
 #to-top-button {
-    background: #746CF6;
-    color: white;
     padding: 11px 23px;
     font-size: 15px;
     font-family: proxima-nova, sans-serif;
     letter-spacing: 0.63px;
     margin-top: 5em;
+    background-color: white;
+    color: #746CF6;
+}
+button:hover {
+    opacity:1.0;
+    box-shadow:none;
 }
 
 /* Images */
