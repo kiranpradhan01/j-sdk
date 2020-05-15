@@ -122,6 +122,7 @@
     width: 379px;
     height: 635px;
     border-radius: 10px;
+    position: relative;
 }
 
 #purple-background {
@@ -160,6 +161,8 @@
     font-size: 15px;
     font-family: proxima-nova, sans-serif;
     letter-spacing: 0.63px;
+    position: absolute center;
+    bottom: 0;
 }
 
 #learn-more-button-pink {
@@ -168,6 +171,7 @@
     font-size: 15px;
     font-family: proxima-nova, sans-serif;
     letter-spacing: 0.63px;
+    position: absolute center;
 }
 
 #learn-more-button-green {
@@ -176,6 +180,7 @@
     font-size: 15px;
     font-family: proxima-nova, sans-serif;
     letter-spacing: 0.63px;
+    position: absolute center;
 }
 
 #to-top-button {

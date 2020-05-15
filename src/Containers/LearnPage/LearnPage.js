@@ -12,7 +12,11 @@ class LearnPage extends React.Component {
     handleClick(id) {
         let element = document.getElementById(id);
         element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-      }
+    }
+
+    rerouteToSocial() {
+        window.location.assign('/topics/socialmedia');
+    }
 
     render() {
         return(
@@ -69,7 +73,7 @@ class LearnPage extends React.Component {
                                     <p>It can be useful, but unsettling to see an ad specifically targeted to you, but how can that impact how you think about yourself? Learn about how targeted social media ads can be a vector for misinformation.</p>
                                 </div>
                                 <div class="center">
-                                    <button id="learn-more-button">View Topic</button>
+                                    <button id="learn-more-button" onClick={() => this.rerouteToSocial()}>View Topic</button>
                                 </div>
                             </div>
                             <div class="topic-container center" id="pink-background">
@@ -86,7 +90,9 @@ class LearnPage extends React.Component {
                                 <div><img src={Search} alt="Girl holding large magnifying glass up to webpage" class="img-learn-more"></img></div>
                                 <div id="topic-content">
                                     <h1>Search Engines and You</h1>
-                                    <p>Your search engine of choice might not say much about you, but how does the algorithm underlying search engines influence what search results you see?  Learn about how search engine algorithms can result in being misinformed.</p>
+                                    <p>How does the algorithm underlying search engines influence what search results you see?  Learn about how search engine algorithms can result in being misinformed.
+                                        <br></br><br></br>
+                                    </p>
                                 </div>
                                 <div class="center">
                                     <button id="learn-more-button-green">Coming Soon!</button>

@@ -35,7 +35,7 @@ class LandingPage extends React.Component {
                     <button onClick={() => this.reroute()}> Browse Topics </button>
                 </div>
 
-                <div className="wrap"> 
+                <div className="wrap screen"> 
                   <img id="tablet" className="tablet" src={Tablet} alt="tablet"/>
                   <img id="section1" className="img" src={Section} alt="tablet"/>
                 </div>
