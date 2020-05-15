@@ -7,7 +7,10 @@ import SocialMediaStart from '../../Components/SocialMediaStart/SocialMediaStart
 import ModalComp from '../../Components/ModalComp/ModalComp.js'; 
 import LoadingComp from '../../Components/LoadingComp/LoadingComp.js';
 import Adwords from '../../Components/Adwords/Adwords.js'; 
-import CreateAd from '../../Components/CreateAd/CreateAd.js'; 
+import CreateAdPart1 from '../../Components/CreateAdPart1/CreateAdPart1.js'; 
+import CreateAdPart2 from '../../Components/CreateAdPart2/CreateAdPart2.js'; 
+import { timingSafeEqual } from 'crypto';
+import { thistle } from 'color-name';
 
 let compLoaded = false; 
 class SMLessonContainer extends React.Component {
@@ -28,7 +31,9 @@ class SMLessonContainer extends React.Component {
         this.onModalClicked = this.onModalClicked.bind(this); 
         this.onExitClicked = this.onExitClicked.bind(this); 
         this.onAdwordClicked = this.onAdwordClicked.bind(this); 
-
+        this.bannerAdsChanged = this.bannerAdsChanged.bind(this); 
+        this.postAdsChanged = this.postAdsChanged.bind(this); 
+        this.videoAdsChanged = this.videoAdsChanged.bind(this); 
     }
 
     onSubmitClicked(newResult, words) {
@@ -75,6 +80,31 @@ class SMLessonContainer extends React.Component {
         this.setState({
             page:this.state.page-1 
         }); 
+
+        let buttons2 = document.querySelector("#SMLessonContainer_buttons > p");
+        buttons2.style.marginLeft = "50vw"; 
+    }
+
+    budgetChanged(number) {
+        this.setState({
+            budget: number 
+        })
+    }
+
+    postAdsChanged(post) {
+        this.setState({
+            postAds: post 
+        })
+    }
+    bannerAdsChanged(banner) {
+        this.setState({
+            bannerAds: banner 
+        })
+    }
+    videoAdsChanged(video) {
+        this.setState({
+            videoAds: video 
+        })
     }
 
     dotColorForwards() {
@@ -98,17 +128,27 @@ class SMLessonContainer extends React.Component {
             buttons.style.display = "flex"; 
             document.getElementById("SMLessonContainer_cicles_dot4").style.backgroundColor = "gray";
             document.getElementById("SMLessonContainer_cicles_dot5").style.backgroundColor = "#0075C4";
-
+            let buttons2 = document.querySelector("#SMLessonContainer_buttons > p");
+            console.log("ye");
+            buttons2.style.marginLeft = "50vw"; 
         }
 
         if(this.state.page == 4) {
             document.getElementById("SMLessonContainer_cicles_dot5").style.backgroundColor = "gray";
             document.getElementById("SMLessonContainer_cicles_dot6").style.backgroundColor = "#0075C4";
+
+            let buttons = document.querySelector("#SMLessonContainer_buttons > p");
+            console.log("ye");
+            buttons.style.marginLeft = "40vw"; 
+ 
+
+
         }  
 
         if(this.state.page == 5) {
             document.getElementById("SMLessonContainer_cicles_dot6").style.backgroundColor = "gray";
             document.getElementById("SMLessonContainer_cicles_dot7").style.backgroundColor = "#0075C4";
+ 
         }
 
         if(this.state.page == 6) {
@@ -156,7 +196,8 @@ class SMLessonContainer extends React.Component {
                 {this.state.modal ? <ModalComp display="visible" onExitClicked={(modal) => this.onExitClicked(modal)}/>:null}
                 {this.showLoader()}
                 {this.state.page == 3 ? <Adwords adwords={this.state.adwords} onAdwordClicked={(number, selectedAdWord) => this.onAdwordClicked(number, selectedAdWord)}/>:null }
-                {this.state.page == 4 ? <CreateAd selectedWord={this.state.selectedWord} onCreateAdClicked={(number,reach,weeks) => this.onCreateAdClicked(number,reach,weeks)}/>:null}
+                {this.state.page == 4 ? <CreateAdPart1 selectedWord={this.state.selectedWord} budgetChanged={(budget) => this.budgetChanged(budget)} bannerAdsChanged={(banner) => this.bannerAdsChanged(banner)} postAdsChanged={(post) => this.postAdsChanged(post)} videoAdsChanged={(video) => this.videoAdsChanged(video)}/>:null}
+                {this.state.page == 5 ? <CreateAdPart2 budget={this.state.budget} videoAds={this.state.videoAds} postAds={this.state.postAds} bannerAds={this.state.bannerAds}/>:null} 
                 <div id="SMLessonContainer_buttons"> 
                     <p onClick={this.goBack}> Back </p>
                     <button onClick={this.changeComponent}> Continue </button>

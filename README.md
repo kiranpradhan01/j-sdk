@@ -1,14 +1,17 @@
-# j-sdk
-Dayoung Cheong
-- cheongdayoung@gmail.com
+# Cognition
+## Fight Misinformation. One Technical Topic at a time.
+An interactive educational platform that helps you combat misinformation with awareness.
 
-JoJo Saunders
-- jojosaunders99@gmail.com 
+## Creators
+We are a team of four students at the University of Washington Information School. We have experience in front-end development, back-end development, design, research and all the  niches in between those topics.
 
-Kiran Pradhan
-- pradhan.kiran786@gmail.com 
+June 2020 Update: Although we have been developing this platform for the past 2 quarters, we are officially handing this project off to our sponsors so that future students may be able to build on our work. If you are interested in  developing these topics further, please contact [Chris Coward](mailto:ccoward@uw.edu) from the [Center for an Informed Public](https://www.cip.uw.edu/).
 
-Sai Ranganathan 
-- sr52@uw.edu 
+- [Dayoung Cheong](mailto:cheongdayoung@gmail.com)
+- [Kiran Pradhan](mailto:pradhan.kiran786@gmail.com)
+- [Sai Ranganathan](mailto:sr52@uw.edu)
+- [JoJo Saunders](mailto:jojosaunders99@gmail.com)
 
-We're a team of four students at the Information School. We have experience in front-end development, back-end development, design, research and all the little niches in between those topics. Although we have been developing this platform for the past 2 quarters, we are officially handing this project back to our sponsors so that future students may be able to continue our work. If you are interested in further developing on these topics, please contact Rolf Hapel from the Center for an Informed Public at <rhapel@uw.edu>.
+
+## Notes and Acknowledgements
+Cognition was created as part of our [2020 Capstone Project](https://ischool.uw.edu/capstone) at the University of Washington Information School. Special thanks to Rolf Hapel and our sponsor, the [Center for an Informed Public](https://www.cip.uw.edu/).

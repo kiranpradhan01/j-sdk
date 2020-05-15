@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* Introduction */
+#LearnPage_introduction {
+    display: flex;
+    padding-top: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+#LearnPage_introduction_Text header {
+    background-color: var(--dark);
+    font-family: proxima-nova, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1.88px;
+    color: var(--dark);
+    color: #4A47DF;
+}
+
+#LearnPage_introduction_Text p {
+    font-family: proxima-nova, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.63px;
+    color: var(--dark);
+}
+
+/* Definitions */
+#LearnPage_definitions_Text {
+    text-align: left;
+    display: inline-block;
+}
+
+#LearnPage_definitions_Text h2 {
+    background-color: var(--dark);
+    font-family: proxima-nova, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--dark);
+    color: #4A47DF;
+}
+
+#LearnPage_definitions_Text p {
+    text-align: left;
+    font-family: proxima-nova, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.63px;
+    color: var(--dark);
+}
+
+/* Questions */
+#LearnPage_questions {
+    display: flex;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+#LearnPage_questions_Text h2 {
+    background-color: var(--dark);
+    font-family: proxima-nova, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--dark);
+    color: #4A47DF;
+    padding-left: 75px;
+}
+
+#LearnPage_questions_Text p {
+    display: inline-block;
+    text-align: left;
+    width: 850px;
+    height: 172px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.63px;
+    color: var(--dark);
+    padding-left: 75px;
+}
+
+/* Topics */
+#LearnPage_topics {
+    position: relative;
+    z-index: 2;
+    margin-top: 15em;
+}
+
+#LearnPage_topics h2 {
+    background-color: var(--dark);
+    font-family: proxima-nova, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--dark);
+    color: #4A47DF;
+    padding-left: 75px;
+    text-align: center
+}
+
+#LearnPage_topics_overlay {
+    position: relative;
+    z-index: 3;
+}
+
+#LearnPage_topics_container {
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.topic-container {
+    margin: auto;
+    overflow: hidden;
+    width: 379px;
+    height: 635px;
+    border-radius: 10px;
+}
+
+#purple-background {
+    background: #F0EFFF;
+}
+
+#pink-background {
+    background: #FF9DB5;
+}
+
+#green-background {
+    background: #C2F9F6;
+}
+
+#topic-content {
+    color: #12236A;
+    font-weight: bold;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 0.63px;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: left;
+}
+
+#topic-content h1 {
+    font-size: 28px;
+}
+
+#topic-content p {
+    line-height: 1.3em;
+}
+
+#learn-more-button {
+    padding: 11px 23px;
+    background: #12236A;
+    font-size: 15px;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 0.63px;
+}
+
+#to-top-button {
+    background: white;
+    color: #746CF6;
+    padding: 11px 23px;
+    font-size: 15px;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 0.63px;
+    margin-top: 5em;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Images */
+.img-learn-more {
+    margin-top: 3em;
+    width: 281px;
+    height: 206px;
+}
+
+.img-select {
+    width: 458px;
+    height: 371px;
+}
+
+.img-decide {
+    width: 345px;
+    height: 286px;
+}
+
+.background-slant {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}

@@ -12,18 +12,13 @@ class NavBar extends React.Component {
     render() {
       return (
         <div id="navbar2">
-            <div id="cognition"><Link to={'/'} id="cognition"> Cognition </Link></div>
-            <a class="navbar2_header"><Link to={'/about'} class="navbar2_header"> About Us</Link> </a> 
-            <a class="navbar2_header"><Link to={'/goals'} class="navbar2_header">Our Goal</Link></a> 
-            <a class="navbar2_header"><Link to={'/contact'} class="navbar2_header">Contact</Link></a>
-            <div class="navbar2_header" id="dropdown">
-              <div> Topics </div>
-              <div class="dropdown-content">
-                <a><Link to={'/topics/socialmedia'} class="lessons">Social Media</Link></a>
-                <a><Link to={'/topics/spread'} class="lessons">Spread of Information</Link></a>
-                <a><Link to={'/topics/seo'} class="lessons">SEO</Link></a>
-              </div>
-            </div>         
+            <div id="cognition"><h1><Link to={'/'} id="cognition">Cognition</Link></h1></div>
+            <div id="nav-links">
+              <a><Link to={'/'} class="navbar2_header">Home</Link> </a> 
+              <a><Link to={'/about'} class="navbar2_header">About Us</Link></a> 
+              <a><Link to={'/topics/socialmedia'} class="navbar2_header">SMPage</Link></a>
+              <a><Link to={'/learn'} class="navbar2_header"><button id="learn-button">Learn</button></Link></a>
+            </div>       
           </div>
 
       );
