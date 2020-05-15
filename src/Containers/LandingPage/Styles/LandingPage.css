@@ -55,10 +55,37 @@
 
 }
 
-
-#LandingPage img {
-    width: 1000px; 
-    height: 700px; 
+.img {
+    width: 100%;
+    height: auto;
     display: block; 
     margin: auto; 
+}
+
+.wrap {
+    position: relative; 
+    z-index: 1;
+}
+
+.tablet {
+    position: absolute; 
+    z-index: 3;
+    width: 75%;
+    left: 12.5%;
+    margin-top: 0%;
+}
+
+.anchor {
+    z-index: 3;
+    position: absolute; 
+    top: 50%;
+}
+
+.topButton {
+    z-index: 3;
+    position: absolute; 
+    bottom: 5%;
+    left: 40%;
+    background-color: white;
+    color: #746CF6;
 }
