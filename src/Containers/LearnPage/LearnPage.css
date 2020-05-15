@@ -8,6 +8,10 @@
     padding-right: 75px;
 }
 
+#LearnPage_introduction_Text {
+    width: 60%;
+}
+
 #LearnPage_introduction_Text header {
     background-color: var(--dark);
     font-family: proxima-nova, sans-serif;
@@ -156,8 +160,8 @@
 }
 
 #to-top-button {
-    background: #746CF6;
-    color: white;
+    background: white;
+    color: #746CF6;
     padding: 11px 23px;
     font-size: 15px;
     font-family: proxima-nova, sans-serif;
@@ -188,7 +192,7 @@
 
 .background-slant {
     position: absolute;
-    top: 0px;
+    bottom: 100px;
     z-index: 1;
 }
 
@@ -197,8 +201,7 @@
     margin-left: 5%;
 }
 
-/* .topButton {
-    left: 40%;
-    background-color: white;
-    color: #746CF6;
-} */
+.overlay{
+    position: relative;
+    z-index: 2;
+}

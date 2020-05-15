@@ -59,7 +59,7 @@ class LearnPage extends React.Component {
                 </div>
 
                 <div id="LearnPage_topics">
-                    <h2>Learn More about Misinformation</h2>
+                    <h2 className="overlay">Learn More about Misinformation</h2>
                     <div id="LearnPage_topics_overlay">
                         <div id="LearnPage_topics_container">
                             <div class="topic-container center" id="purple-background">
