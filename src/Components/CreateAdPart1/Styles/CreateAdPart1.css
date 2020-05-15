@@ -1,0 +1,72 @@
+#SMLessonPage_createAdPart1_card { 
+    margin: auto;
+    padding-top: 5vh; 
+    padding-bottom: 6vh; 
+    font-family: 'Lato';
+    overflow: hidden;
+    margin-right: 5vw; 
+}
+
+#SMLessonPage_createAdPart1 { 
+
+}
+
+#SMLessonPage_createAdPart1_card_header p {
+    margin-bottom: 2vh;  
+    font-size: 30px;
+    text-align:center; 
+}
+
+#SMLessonPage_createAdPart1_card_header span {
+    text-align:center; 
+    font-size: 20px;
+    color: #1f2f3f; 
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+}
+
+#SMLessonPage_createAdPart1_card_checkboxes {
+    text-align: center;  
+}
+
+#SMLessonPage_createAdPart1_card_checkboxes input { 
+    height: 3vh;
+    width: 2vw; 
+    transform: scale(1.5); 
+}
+
+#SMLessonPage_createAdPart1_card_adTypes {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;  
+}
+
+#SMLessonPage_createAdPart1_card_bannerAds img { 
+    width: 255px;
+    height: 166px;
+}
+
+#SMLessonPage_createAdPart1_card_bannerAds > p  {
+    font-size: 20pt;
+    text-align: center; 
+    color: gray; 
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+}
+
+#SMLessonPage_createAdPart1_card_bottom_budgetCount p {
+    font-size: 20pt;
+    text-align: center; 
+    margin: 0px; 
+    color: black; 
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    
+}
+
+#SMLessonPage_createAdPart1_card_bottom_budgetCount span  {
+    color: green; 
+}
+

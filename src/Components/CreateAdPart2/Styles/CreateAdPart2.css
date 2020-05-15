@@ -1,0 +1,69 @@
+#SMLessonPage_createAdPart2 {
+    margin-top: 40vh; 
+}
+
+#SMLessonPage_createAdPart2_budgetHeader header {
+    font-size: 20pt;
+    color: black; 
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+}
+
+#SMLessonPage_createAdPart2_slider header {
+    font-size: 15pt;
+    color: #1f2f3f; 
+    font-family: 'Lato';
+}
+
+#SMLessonPage_createAdPart2_slider input {
+    width: 715px; 
+    margin: auto; 
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: #0075C4;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#SMLessonPage_createAdPart2_slider input {
+    width: 715px; 
+    margin: auto; 
+}
+
+#SMLessonPage_createAdPart2_slider p { 
+    padding-right: 50vw; 
+    padding-top: 2vh; 
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    color: #979797;
+}
+
+
+#SMLessonPage_createAdPart2_slider input:hover {
+    opacity: 1;
+}
+
+#SMLessonPage_createAdPart2_slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e6e6e6;
+    cursor: pointer;
+  }
+
+  #SMLessonPage_createAdPart2_slider input::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e6e6e6;
+    cursor: pointer;
+}
