@@ -84,7 +84,7 @@
 #LearnPage_topics {
     position: relative;
     z-index: 2;
-    margin-top: 15em;
+    margin-top: 5em;
 }
 
 #LearnPage_topics h2 {
@@ -156,8 +156,8 @@
 }
 
 #to-top-button {
-    background: white;
-    color: #746CF6;
+    background: #746CF6;
+    color: white;
     padding: 11px 23px;
     font-size: 15px;
     font-family: proxima-nova, sans-serif;
@@ -191,3 +191,14 @@
     top: 0px;
     z-index: 1;
 }
+
+.center {
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* .topButton {
+    left: 40%;
+    background-color: white;
+    color: #746CF6;
+} */
