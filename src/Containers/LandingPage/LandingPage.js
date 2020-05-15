@@ -21,7 +21,7 @@ class LandingPage extends React.Component {
     }
 
     reroute() {
-      window.location.assign('/topics/socialmedia');
+      window.location.assign('/learn');
     }
 
     render() {
