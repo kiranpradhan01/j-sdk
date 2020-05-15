@@ -65,6 +65,9 @@
     display: flex;
     padding-left: 75px;
     padding-right: 75px;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    width: 100%;
 }
 
 #LearnPage_questions_Text h2 {
@@ -80,7 +83,7 @@
 #LearnPage_questions_Text p {
     display: inline-block;
     text-align: left;
-    width: 850px;
+    width: 750px;
     height: 172px;
     font-family: proxima-nova, sans-serif;
     font-size: 22px;
@@ -218,6 +221,7 @@ button:hover {
 .img-decide {
     width: 345px;
     height: 286px;
+    margin-top: 15%;
 }
 
 .background-slant {
