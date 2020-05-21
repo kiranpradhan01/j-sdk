@@ -1,0 +1,151 @@
+#AboutPage_header_text1 {
+    width: 400px;
+    height: 76px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 35pt;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    display: block; 
+    margin: auto; 
+    text-align: center;
+    color: #0075C4;
+}
+
+#AboutPage_header_text2  {
+    width: 900px;
+    height: 76px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    display: block; 
+    margin: auto; 
+    text-align: center;
+    margin-bottom: 10vh; 
+}
+.profile_picture {
+    height: 280px; 
+    width: 230px; 
+    padding-left:20px; 
+}
+
+caption {
+    font-size: 12pt; 
+    padding-bottom: 20px;
+    display: block; 
+    margin:auto;
+    width: 250px;
+    color: black; 
+    text-align: center; 
+}
+
+#AboutPage_pictures {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    margin-left: 5vw; 
+}
+
+.About_Page_profile p {
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0vw; 
+ 
+}
+
+.AboutPage_profile_name {
+    width: 275px;
+    height: 50px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0075C4;
+    text-align: center; 
+    margin-right: 12vw; 
+}
+
+.AboutPage_profile_role {
+    padding-left: 15px;  
+    font-family: proxima-nova, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;  
+}
+
+#AboutPage_profile_sai_role {
+    margin-right: 2vw; 
+}
+
+#AboutPage_profile_kiran_role {
+    width: 200px;
+    margin-left: 2vw; 
+}
+
+#AboutPage_pictures {
+    margin-right: 5vw; 
+}
+
+#AboutPage_Cip {
+    height: 406px;
+    width: 100%; 
+    background-color: #0075C4;
+    display: flex; 
+    justify-content: space-evenly;
+    flex-direction: row; 
+    margin-top: 5vh; 
+}
+
+#AboutPage_Cip_left > img {
+    height: 406px;
+    width: 250%; 
+}
+
+#AboutPage_Cip_right {
+    height: 406px; 
+    width: 100%; 
+    margin-left: 10vw; 
+    padding-left: 20vw;
+    padding-top: 5vh;  
+    text-align: center; 
+}
+
+#AboutPage_Cip_right_header {
+    font-family: proxima-nova, sans-serif;
+    font-size: 30pt;
+    font-weight: 500; 
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+#AboutPage_Cip_right_text {
+    width: 706px;
+    height: 60px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+#AboutPage_Cip_right_button {
+    background-color:  #C0C0C0; 
+    margin-top: 10vh; 
+}

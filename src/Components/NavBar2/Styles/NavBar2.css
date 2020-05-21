@@ -16,7 +16,7 @@
   font-style: bold;
   letter-spacing: 0.94px;
   text-align: center;
-  color: #4A47DF;
+  color: #0075C4;
   text-decoration: none;
   display: block;
 }
@@ -25,12 +25,12 @@
   font-family: proxima-nova, sans-serif;
   font-size: 16px;
   letter-spacing: 0.63px;
-  color: #4A47DF;
+  color: #0075C4;
   text-decoration: none;
 }
 
 .navbar2_header:hover {
-  color: #786FFD;
+  color: #0075C4;
 }
 
 #nav-links {
@@ -47,10 +47,11 @@
 #learn-button {
   font-weight: bold;
   padding: 11px 42px;
+  background-color:#0075C4;
 }
 
 #learn-button:hover {
-  background-color: #786FFD;
+  background-color: #0075C4;
   opacity:1.0;
   box-shadow:none;
 }
