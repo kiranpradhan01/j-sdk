@@ -8,7 +8,10 @@
 #SMLessonContainer_dots {
     display: flex; 
     flex-direction: column; 
-    margin: 10vh;
+    margin-right: 12vh;
+    margin-left: 10vh;
+    margin-top: 5.5vh;
+
 }  
 
 #SMLessonContainer_dots > div {
@@ -17,7 +20,7 @@
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    margin-top: 6vh;
+    margin-top: 4.5vh;
 }
 
 #SMLessonContainer_dots > #SMLessonContainer_cicles_dot1 {

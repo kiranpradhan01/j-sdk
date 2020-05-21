@@ -1,0 +1,24 @@
+#SMLessonPage_VisualizationComp {
+    margin-bottom: 10vh;
+    margin-right: 10vw;  
+}
+
+#SMLessonPage_VisualizationComp_header {
+    font-family: proxima-nova, sans-serif;
+    text-align: center; 
+    font-size: 25pt; 
+
+}
+
+#SMLessonPage_VisualizationComp_subText {
+    font-family: proxima-nova, sans-serif;
+    text-align: center; 
+    font-size: 15pt; 
+}
+
+#SMLessonsPage_VisualizaitonComp_graphs > p {
+    text-align: left; 
+    font-family: proxima-nova, sans-serif;
+    padding-left: 3vw; 
+    padding-top: 3vh; 
+}

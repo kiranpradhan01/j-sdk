@@ -9,6 +9,12 @@ import LoadingComp from '../../Components/LoadingComp/LoadingComp.js';
 import Adwords from '../../Components/Adwords/Adwords.js'; 
 import CreateAdPart1 from '../../Components/CreateAdPart1/CreateAdPart1.js'; 
 import CreateAdPart2 from '../../Components/CreateAdPart2/CreateAdPart2.js'; 
+import UsersReached from '../../Components/UsersReached/UsersReached.js'; 
+import VisualizationComp from '../../Components/VisualizationComp/VisualizationComp.js'; 
+import LessonsComp from '../../Components/LessonsComp/LessonsComp.js'; 
+import LessonsComp2 from '../../Components/LessonsComp2/LessonsComp2.js'; 
+import CircleAdComp from '../../Components/CircleAdComp/CircleAdComp.js'; 
+import LearnPage from '../../Containers/LearnPage/LearnPage.js'; 
 import { timingSafeEqual } from 'crypto';
 import { thistle } from 'color-name';
 
@@ -21,8 +27,21 @@ class SMLessonContainer extends React.Component {
             page: 0, 
             lessonIntro: true, 
             loadingCompHidden: true, 
-            adwords:[], 
-            modal: false 
+            adwords:[],
+            modal: false, 
+            adwords2: ["7-Eleven",
+            "8Shit",
+            "9GAG",
+            "A cappella",
+            "A. R. Rahman",
+            "Action movies",
+            "Action-adventure game",
+            "Adobe Photoshop",
+            "Adventure film",
+            "Air travel",
+            "Airline",
+            "Akon",
+            "Lebron James"]
         } 
 
         this.changeComponent = this.changeComponent.bind(this); 
@@ -107,6 +126,12 @@ class SMLessonContainer extends React.Component {
         })
     }
 
+    getEngagement(reach,weeks) {
+        this.setState({
+            usersReached:reach 
+        })
+    }; 
+
     dotColorForwards() {
         if(this.state.page == 0) {
             document.getElementById("SMLessonContainer_cicles_dot1").style.backgroundColor = "gray";
@@ -148,12 +173,68 @@ class SMLessonContainer extends React.Component {
         if(this.state.page == 5) {
             document.getElementById("SMLessonContainer_cicles_dot6").style.backgroundColor = "gray";
             document.getElementById("SMLessonContainer_cicles_dot7").style.backgroundColor = "#0075C4";
+
+            let buttonpara = document.querySelector("#SMLessonContainer_buttons > p");
+            console.log("ye");
+            buttonpara.style.marginRight = "-20vw"; 
+
+            let buttons = document.querySelector("#SMLessonContainer_buttons");
+            console.log("ye");
+            buttons.style.marginTop = "5vh"; 
  
         }
 
         if(this.state.page == 6) {
+
+            let buttonpara = document.querySelector("#SMLessonContainer_buttons > p");
+            console.log("ye");
+            buttonpara.style.marginRight = "-10vw"; 
+
+            let buttons = document.querySelector("#SMLessonContainer_buttons");
+            console.log("ye");
+            buttons.style.marginTop = "0vh"; 
+
             document.getElementById("SMLessonContainer_cicles_dot7").style.backgroundColor = "gray";
             document.getElementById("SMLessonContainer_cicles_dot8").style.backgroundColor = "#0075C4";
+        }
+        if(this.state.page == 7) {
+
+            let buttonpara = document.querySelector("#SMLessonContainer_buttons > p");
+            console.log("ye");
+            buttonpara.style.marginRight = "5vw"; 
+
+            let buttons = document.querySelector("#SMLessonContainer_buttons");
+            console.log("ye");
+            buttons.style.marginTop = "5vh"; 
+
+
+            document.getElementById("SMLessonContainer_cicles_dot8").style.backgroundColor = "gray";
+            document.getElementById("SMLessonContainer_cicles_dot9").style.backgroundColor = "#0075C4";
+        } 
+        if(this.state.page == 8) {
+            document.getElementById("SMLessonContainer_cicles_dot9").style.backgroundColor = "gray";
+            document.getElementById("SMLessonContainer_cicles_dot10").style.backgroundColor = "#0075C4";
+        }
+        if(this.state.page == 9) {
+
+            let buttonpara = document.querySelector("#SMLessonContainer_buttons > p");
+            console.log("ye");
+            buttonpara.style.marginRight = "-10vw"; 
+
+            let buttons = document.querySelector("#SMLessonContainer_buttons");
+            console.log("ye");
+            buttons.style.marginTop = "0vh"; 
+
+            let buttonText = document.querySelector("#SMLessonContainer_buttons button");
+            console.log("ye");
+            buttonText.innerHTML = "Finish"
+            document.getElementById("SMLessonContainer_cicles_dot10").style.backgroundColor = "gray";
+            document.getElementById("SMLessonContainer_cicles_dot11").style.backgroundColor = "#0075C4";
+
+        }
+
+        if(this.state.page == 10) {
+            window.location.assign('/learn');
         }
     }
 
@@ -185,6 +266,9 @@ class SMLessonContainer extends React.Component {
                             <div id ="SMLessonContainer_cicles_dot6"> </div>
                             <div id ="SMLessonContainer_cicles_dot7"> </div>
                             <div id ="SMLessonContainer_cicles_dot8"> </div>
+                            <div id ="SMLessonContainer_cicles_dot9"> </div>
+                            <div id ="SMLessonContainer_cicles_dot10"> </div>
+                            <div id ="SMLessonContainer_cicles_dot11"> </div>
                 </div>
             </div>
 
@@ -197,7 +281,12 @@ class SMLessonContainer extends React.Component {
                 {this.showLoader()}
                 {this.state.page == 3 ? <Adwords adwords={this.state.adwords} onAdwordClicked={(number, selectedAdWord) => this.onAdwordClicked(number, selectedAdWord)}/>:null }
                 {this.state.page == 4 ? <CreateAdPart1 selectedWord={this.state.selectedWord} budgetChanged={(budget) => this.budgetChanged(budget)} bannerAdsChanged={(banner) => this.bannerAdsChanged(banner)} postAdsChanged={(post) => this.postAdsChanged(post)} videoAdsChanged={(video) => this.videoAdsChanged(video)}/>:null}
-                {this.state.page == 5 ? <CreateAdPart2 budget={this.state.budget} videoAds={this.state.videoAds} postAds={this.state.postAds} bannerAds={this.state.bannerAds}/>:null} 
+                {this.state.page == 5 ? <CreateAdPart2 budget={this.state.budget} videoAds={this.state.videoAds} postAds={this.state.postAds} bannerAds={this.state.bannerAds} getEngagement={(reach,weeks) => this.getEngagement(reach,weeks)}/>:null} 
+                {this.state.page == 6 ? <UsersReached userNum={this.state.usersReached} weeksNum={this.state.weeksNum} adwords={this.state.adwords}/>:null}
+                {this.state.page == 7 ? <CircleAdComp adwords={this.state.adwords}/>:null}
+                {this.state.page == 8 ? <LessonsComp/>:null}
+                {this.state.page == 9 ? <LessonsComp2/>:null}
+                {this.state.page == 10 ? <VisualizationComp/>:null}
                 <div id="SMLessonContainer_buttons"> 
                     <p onClick={this.goBack}> Back </p>
                     <button onClick={this.changeComponent}> Continue </button>

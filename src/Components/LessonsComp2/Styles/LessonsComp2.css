@@ -1,0 +1,38 @@
+.SMLessonPage_Lessons_soWhat {
+    background-color: #f2f0ff;
+    border: solid 3px #6c5ce7;
+    width: 808px;
+    height: 715px;
+    border-radius: 20px;
+    margin-bottom: 10vh; 
+    margin-left:-15vw; 
+    margin:auto; 
+    text-align: center; 
+
+}
+
+.SMLessonPage_Lessons_soWhat header {
+    font-size: 28px;
+    margin-top: 5vh; 
+}
+
+.SMLessonPage_Lessons_ready {
+    font-size: 20px;
+}
+.SMLessonPage_Lessons_soWhat > p {
+    font-family: proxima-nova, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+}
+
+#SMLessonPage_LessonsComp2 {
+    margin-right: 20vw; 
+    margin-top: 5vh; 
+}

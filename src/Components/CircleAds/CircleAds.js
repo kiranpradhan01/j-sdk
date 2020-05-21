@@ -23,9 +23,9 @@ class CircleAds extends React.Component {
             height: document.getElementById('wrap').clientHeight 
           },
           circle : {
-            radius : ( document.getElementById('wrap').clientWidth / 2.8),
-            centerX : ( document.getElementById('wrap').clientWidth / 3 ),
-            centerY : ( document.getElementById('wrap').clientHeight / 3 ),
+            radius : ( document.getElementById('wrap').clientWidth / 2.3),
+            centerX : ( document.getElementById('wrap').clientWidth / 10 ),
+            centerY : ( document.getElementById('wrap').clientHeight / 10 ),
           },
           methods : { 
             circle : function(radius, steps, centerX, centerY) {
