@@ -12,6 +12,7 @@
     margin: auto; 
     text-align: center;
     color: #0075C4;
+    margin-top: 5vh; 
 }
 
 #AboutPage_header_text2  {
@@ -146,6 +147,6 @@ caption {
 }
 
 #AboutPage_Cip_right_button {
-    background-color:  #C0C0C0; 
+    background-color:  #708090; 
     margin-top: 10vh; 
 }
