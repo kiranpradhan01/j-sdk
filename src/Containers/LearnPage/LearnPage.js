@@ -6,9 +6,17 @@ import SocialMediaDashboard from "../../Pictures/SocialMediaDashboard.png";
 import Global from "../../Pictures/Global.png";
 import Search from "../../Pictures/Search.png";
 import Slant from "../../Pictures/purple-slant.png";
-import Footer from "../../Components/Footer/Footer.js"
+import Footer from "../../Components/Footer/Footer.js";
+import QuizModal from "./QuizModal.js";
 
 class LearnPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            modal: false
+        }
+    }
+
     handleClick(id) {
         let element = document.getElementById(id);
         element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
@@ -18,9 +26,18 @@ class LearnPage extends React.Component {
         window.location.assign('/topics/socialmedia');
     }
 
+    showModal = () => {
+        this.setState({modal: true})
+    }
+
+    closeModal = () => {
+        this.setState({modal: false});
+    }
+
     render() {
         return(
             <div>
+                <div>
                 <div id="LearnPage_introduction"> 
                     <div id="LearnPage_introduction_Text">
                         <header id="top">Your Crash Course on Misinformation</header>
@@ -68,7 +85,7 @@ class LearnPage extends React.Component {
                         <p>It can be difficult to understand the difference between misinformation and disinformation. In doing so, you should always consider the intent behind the information. Was their goal to decieve or was there simply a mistake in reporting? Before moving on, test you understanding a quick quiz to see if you can spot the difference between misinformation and disinformation!</p>
                     </div>
                     <div>
-                        <button id="quiz-button">Test Your Knowledge</button>
+                        <button id="quiz-button" onClick={()=> {this.showModal()}}>Test Your Knowledge</button>
                     </div>
                 </div>
 
@@ -119,6 +136,8 @@ class LearnPage extends React.Component {
                     <Footer/>
                 </div>
             </div>
+            {this.state.modal ? <QuizModal display="visible" handleClose={this.closeModal}/>:null}
+        </div>
         )
     }
 }
