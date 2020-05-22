@@ -110,3 +110,7 @@
     font-size: 12pt;
     font-weight: bold;
 }
+
+#SMLessonPage_uploadForm_center_form_fileName {
+    margin-left: 1.5vw; 
+}
