@@ -4,7 +4,6 @@ import './App.css';
 import NavBar2 from './Components/NavBar2/NavBar2.js';
 import MobilePage from './Containers/MobilePage/MobilePage.js'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import ModalComp from './Components/ModalComp/ModalComp.js'; 
 import LandingPage from './Containers/LandingPage/LandingPage.js';  
 import SMLessonContainer from './Containers/SMLessonPage/SMLessonContainer.js'; 
 import LearnPage from './Containers/LearnPage/LearnPage.js'

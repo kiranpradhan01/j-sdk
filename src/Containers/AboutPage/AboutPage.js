@@ -6,6 +6,8 @@ import JojoProfile from '../../Pictures/Profiles/Jojo_Profile.png';
 import KiranProfile from '../../Pictures/Profiles/Kiran_Profile.png'; 
 import CIP from '../../Pictures/cip_pic.jpg';  
 import Footer from '../../Components/Footer/Footer.js'; 
+import envelope_icon from '../../Pictures/envelope-regular.svg';
+import linkedin_icon from '../../Pictures/linkedin-brands.svg';
 
 // This is the the loading component that is rendered onto the page when we are doing work on the backend 
 class AboutPage extends React.Component {
@@ -31,8 +33,12 @@ class AboutPage extends React.Component {
                     <img src={DayoungProfile} alt="Dayoung Cheong" class="profile_picture"></img>
                     <div class="left">
                       <p class="AboutPage_profile_name"> Dayoung Cheong </p>
-                      <p class="AboutPage_profile_role"> Full-Stack Developer </p>
-                      <caption>Informatics 2020</caption>
+                      <p class="AboutPage_profile_role" id="AboutPage_profile_dayoung_role"> Full-Stack Developer </p>
+                      <div>
+                        <caption>Informatics 2020</caption>
+                        <a href="https://www.linkedin.com/in/dayoungcheong/" target="_blank"><img src={linkedin_icon} alt="LinkedIn logo links to LinkedIn profile" class="icon"></img></a>
+                        <a href="mailto:cheongdayoung@gmail.com"><img src={envelope_icon} alt="Envelope icon links to email" class="icon second"></img></a>
+                      </div>
                     </div>
                 </div>
 
@@ -40,21 +46,33 @@ class AboutPage extends React.Component {
                     <img src={KiranProfile} alt="Kiran Pradhan" class="profile_picture"></img>
                     <p class="AboutPage_profile_name" id="AboutPage_profile_kiran"> Kiran Pradhan </p> 
                     <p class="AboutPage_profile_role" id="AboutPage_profile_kiran_role"> Project Manager and Developer </p>
-                    <caption>Informatics 2021</caption>
+                    <div>
+                        <caption>Informatics 2021</caption>
+                        <a href="https://www.linkedin.com/in/kiran-pradhan/" target="_blank"><img src={linkedin_icon} alt="LinkedIn logo links to LinkedIn profile" class="icon"></img></a>
+                        <a href="mailto:pradhan.kiran786@gmail.com"><img src={envelope_icon} alt="Envelope icon links to email" class="icon second"></img></a>
+                      </div>
                 </div>
 
                 <div class="About_Page_profile">
                     <img src={SaiProfile} alt="Sai Ranganathan" class="profile_picture"></img>
                     <p class="AboutPage_profile_name"> Sai Ranganathan </p>
                     <p class="AboutPage_profile_role"  id="AboutPage_profile_sai_role"> Full-Stack Developer </p>
-                    <caption> sr52@uw.edu </caption>
+                    <div>
+                        <caption>Informatics 2020</caption>
+                        <a href="https://www.linkedin.com/in/saiprasanna-ranganathan/" target="_blank"><img src={linkedin_icon} alt="LinkedIn logo links to LinkedIn profile" class="icon"></img></a>
+                        <a href="mailto:sr52@uw.edu"><img src={envelope_icon} alt="Envelope icon links to email" class="icon second"></img></a>
+                      </div>
                 </div>
 
                 <div class="About_Page_profile">
                     <img src={JojoProfile} alt="Jojo Saunders" class="profile_picture"></img>
                     <p class="AboutPage_profile_name"> Jojo Saunders </p> 
-                    <p class="AboutPage_profile_role" id="AboutPage_profile_jojo_role">Lead Designer and Researcher </p>
-                    <caption> jojos@uw.edu  </caption>
+                    <p class="AboutPage_profile_role" id="AboutPage_profile_jojo_role">Designer and Researcher </p>
+                    <div>
+                        <caption>Informatics 2021</caption>
+                        <a href="https://www.linkedin.com/in/jojosaunders/" target="_blank"><img src={linkedin_icon} alt="LinkedIn logo links to LinkedIn profile" class="icon"></img></a>
+                        <a href="mailto:jojosaunders99@gmail.com"><img src={envelope_icon} alt="Envelope icon links to email" class="icon second"></img></a>
+                      </div>
                 </div>
             </div>
 

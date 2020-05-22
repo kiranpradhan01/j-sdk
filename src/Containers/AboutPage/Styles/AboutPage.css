@@ -38,12 +38,10 @@
 }
 
 caption {
-    font-size: 12pt; 
-    padding-bottom: 20px;
-    display: block; 
-    width: 250px;
-    color: black; 
-    text-align: center; 
+    font-size: 12pt;
+    display: flex;
+    padding: 10px 20px;
+    color: black;  
 }
 
 #AboutPage_pictures {
@@ -53,8 +51,20 @@ caption {
     margin-left: 5vw; 
 }
 
+.icon {
+    height: 30px;
+    width: 30px;
+    padding-left: 20px;
+}
+
+.second {
+    padding-left: 10px;
+}
+
 .About_Page_profile p {
     padding-left:20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
     display: flex; 
     margin: 0vw;
 }
@@ -65,7 +75,6 @@ caption {
     font-weight: bold;
     color: #4A47DF;
     text-align: left;
-    margin-bottom: 50px;
 }
 
 .AboutPage_profile_role {
@@ -76,16 +85,17 @@ caption {
     text-align: left;
 }
 
-#AboutPage_profile_sai_role {
-    margin-right: 2vw; 
-}
-
 #AboutPage_profile_kiran_role {
     width: 200px;
 }
 
 #AboutPage_profile_jojo_role {
     width: 200px;
+}
+
+/* ALIGN CAPTION */
+#AboutPage_profile_dayoung_role #AboutPage_profile_sai_role {
+    padding-bottom: 2rem;
 }
 
 #AboutPage_pictures {
