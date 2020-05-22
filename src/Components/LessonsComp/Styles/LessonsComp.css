@@ -1,0 +1,36 @@
+#SMLessonsPage_usersReached_lessons_header {
+    margin-top: 40vh;
+    text-align: center; 
+    font-family: proxima-nova, sans-serif;
+    width: 745px;
+    height: 41px;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.94px;
+    color: var(--dark);
+}
+
+#SMLessonsPage_LessonsComp_header  {
+    width: 712px;
+    height: 119px;
+    font-family: proxima-nova, sans-serif;
+    margin-right: 10vw; 
+    margin-left: -5vw;
+    margin-top: 10vh; 
+    text-align: center; 
+    font-size: 20px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    text-align: center;
+    color: var(--dark);
+}
+
+#SMLessonsPage_LessonsComp_lessons {
+    margin-right: 0vw; 
+}

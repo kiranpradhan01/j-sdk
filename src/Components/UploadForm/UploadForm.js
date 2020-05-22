@@ -4,6 +4,9 @@ import UploadIcon from '../../Pictures/upload.png';
 import axios from 'axios'; 
 import jQuery from 'jquery'; 
 import DataInstructions from '../DataInstructions/DataInstructions.js'; 
+//import file from '../../../public/Files/ads_interests copy.json';
+import file2 from '../../Files/ads_interests copy.json'; 
+import { Link } from 'react-router-dom'
 
 // This is the the loading component that is rendered onto the page when we are doing work on the backend
 let fileData;  
@@ -142,7 +145,7 @@ class UploadForm extends React.Component {
         <div id="SMLessonPage_uploadForm_disclaimer"> 
             <p> 
             We know, we know, this isn’t the smoothest way to do this. We’re working on it right now. 
-            Think you can help us? Click here.
+            Don't feel comfortable with using your own data? <Link to="../../Files/ads_interests copy.json" target="_blank" download> Click to Download. </Link>
             </p> 
         </div>
     </div>

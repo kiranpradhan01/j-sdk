@@ -1,6 +1,7 @@
 import React from 'react';
 import './Styles/CreateAdPart2.css'; 
 import EstimatesComp from '../../Components/EstimatesComp/EstimatesComp.js'; 
+import { thistle } from 'color-name';
 
 // This is the the loading component that is rendered onto the page when we are doing work on the backend
 let reach = 0;  
@@ -18,7 +19,8 @@ class CreateAdPart2 extends React.Component {
             budget: this.props.budget,
             postAds: this.props.postAds,
             videoAds: this.props.videoAds,
-            bannerAds: this.props.bannerAds
+            bannerAds: this.props.bannerAds,
+            value: 0
         }
 
         this.sliderHandler = this.sliderHandler.bind(this); 
@@ -50,34 +52,21 @@ class CreateAdPart2 extends React.Component {
 
         if(myWeeks > 20 && myWeeks <= 25) {
             weeks = 50000
-            this.setState({
-                budget: this.state.budget-25000
-            })
         } else if (myWeeks <= 20 && myWeeks > 10) {
             weeks = 25000
-            this.setState({
-                budget: this.state.budget-15000
-            })
         } else if (myWeeks <= 10 && myWeeks > 5) {
             weeks = 10000
-            this.setState({
-                budget: this.state.budget-10000
-            })
         } else if (myWeeks > 0 && myWeeks <= 5) {
             weeks = 5000; 
-            this.setState({
-                budget: this.state.budget-5000
-            })
         } else {
             weeks = 0; 
-            this.setState({
-                budget: this.state.budget-0
-            })
         }  
+
+        
 
         newEngagement = newEngagement + banner + post + video + weeks;
 
-        console.log(newEngagement); 
+        this.props.getEngagement(newEngagement,weeks); 
     }
 
 
@@ -86,9 +75,20 @@ class CreateAdPart2 extends React.Component {
         var slider2 = document.getElementById("SMLessonPage_createAdPart2_slider_input");
         var output2 = document.getElementById("output2");
         output2.innerHTML = slider2.value +  " weeks";
+
+        if(this.state.value > slider2.value) {
+            this.setState({
+                budget: this.state.budget + 3000
+            })
+        } else {
+            this.setState({
+                budget: this.state.budget - 3000 
+            })
+        }
          
         this.setState({
-            weeks: slider2.value
+            weeks: slider2.value,
+            value: slider2.value
         }); 
 
         this.getUserNum(); 
@@ -99,10 +99,11 @@ class CreateAdPart2 extends React.Component {
         <div id="SMLessonPage_createAdPart2">
             <div id="SMLessonPage_createAdPart2_budgetHeader"> 
                 <header> Budget: <span>${this.state.budget}</span></header>
+                {this.state.budget < 0 ? <p id="SMLessonPage_createAdPart2_errorMessage"> Seems like your cost is exceeding your budget, Try lowering your cost! </p> : null}
 
                 <div id="SMLessonPage_createAdPart2_slider">
                             <p>Select a Duration for your Campaign: </p>
-                            <input id="SMLessonPage_createAdPart2_slider_input" onChange={this.sliderHandler} type="range" placeholder="1" min="1" max="25"></input>
+                            <input id="SMLessonPage_createAdPart2_slider_input" onChange={this.sliderHandler} type="range" min="1" max="25" value="1" value={this.state.value}></input>
                             <p>Value: <span id="output2"></span></p>
                 </div>
             </div>

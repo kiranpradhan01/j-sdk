@@ -23,7 +23,7 @@
     font-weight: bold;
     letter-spacing: 1.88px;
     color: var(--dark);
-    color: #4A47DF;
+    color: #0075C4;
 }
 
 #LearnPage_introduction_Text p {
@@ -48,7 +48,7 @@
     font-size: 40px;
     font-weight: bold;
     color: var(--dark);
-    color: #4A47DF;
+    color: #0075C4;
 }
 
 #LearnPage_definitions_Text p {
@@ -76,7 +76,7 @@
     font-size: 40px;
     font-weight: bold;
     color: var(--dark);
-    color: #4A47DF;
+    color: #0075C4;
     padding-left: 75px;
 }
 
@@ -106,7 +106,7 @@
     font-size: 40px;
     font-weight: bold;
     color: var(--dark);
-    color: #4A47DF;
+    color: #0075C4;
     padding-left: 75px;
     text-align: center
 }
@@ -192,14 +192,14 @@
 
 #to-top-button {
     background: white;
-    color: #746CF6;
+    color: #0075C4;
     padding: 11px 23px;
     font-size: 15px;
     font-family: proxima-nova, sans-serif;
     letter-spacing: 0.63px;
     margin-top: 5em;
     background-color: white;
-    color: #746CF6;
+    color: #0075C4;
 }
 
 button:hover {

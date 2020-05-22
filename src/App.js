@@ -13,6 +13,8 @@ import ModalComp from './Components/ModalComp/ModalComp.js';
 import LandingPage from './Containers/LandingPage/LandingPage.js';  
 import SMLessonContainer from './Containers/SMLessonPage/SMLessonContainer.js'; 
 import LearnPage from './Containers/LearnPage/LearnPage.js'
+import AboutPage from './Containers/AboutPage/AboutPage.js'; 
+
 function App() {
   return (
     <Router>
@@ -26,7 +28,7 @@ function App() {
           </div>
       <Switch>
               <Route exact path='/' component={LandingPage} />
-              <Route path='/about' component={MobilePage} />
+              <Route path='/about' component={AboutPage} />
               <Route path='/learn' component={LearnPage} />
               <Route path='/topics/socialmedia' component={SMLessonContainer}/> 
               <Route path='/topics/spread' component={MobilePage} />

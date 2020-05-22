@@ -1,6 +1,7 @@
 .SMLessonPage_Lessons_flex-container {
     display: flex;
     margin: 2em;
+    margin-left:-20vw; 
 }
 
 .SMLessonPage_Lessons_benefits {
@@ -27,7 +28,9 @@
     width: 808px;
     height: 715px;
     border-radius: 20px;
-    margin: auto;
+    margin-bottom: 10vh; 
+    margin-left:-15vw; 
+
 }
 
 #SMLessonPage_Lessons header {
