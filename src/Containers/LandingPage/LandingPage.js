@@ -1,7 +1,7 @@
 import React from 'react'; 
 import './Styles/LandingPage.css'; 
 import Footer from '../../Components/Footer/Footer.js'
-import Tablet from './Pictures/tablet.png';
+import Tablet from './Pictures/Tablet.png';
 import Section from './Pictures/Section.png';
 import Section2 from './Pictures/Section2.png';
 import Section3 from './Pictures/Section3.png';

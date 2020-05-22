@@ -11,7 +11,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #0075C4;
+  color: #4A47DF;
   margin-top: 4vh; 
   margin-bottom: 4vh; 
 }
@@ -42,7 +42,7 @@
 
 #LandingPage_buttons button {
     color: white; 
-    background-color: #0075C4; 
+    background-color: #4A47DF;
     width: 15vw; 
     border-radius: 10px;
     font-family: proxima-nova, sans-serif;
@@ -87,11 +87,11 @@
     bottom: 5%;
     left: 40%;
     background-color: white;
-    color: #0075C4;
+    color: #4A47DF;
 }
 
 .topButton:hover {
-    background-color: #0075C4;
+    background-color: #4A47DF;
 
 }
 
