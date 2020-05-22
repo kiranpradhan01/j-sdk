@@ -20,7 +20,7 @@
     height: 76px;
     font-family: proxima-nova, sans-serif;
     font-size: 15pt;
-    font-weight: bold;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -30,8 +30,9 @@
     text-align: center;
     margin-bottom: 10vh; 
 }
+
 .profile_picture {
-    height: 280px; 
+    height: 230px; 
     width: 230px; 
     padding-left:20px; 
 }
@@ -40,7 +41,6 @@ caption {
     font-size: 12pt; 
     padding-bottom: 20px;
     display: block; 
-    margin:auto;
     width: 250px;
     color: black; 
     text-align: center; 
@@ -54,35 +54,26 @@ caption {
 }
 
 .About_Page_profile p {
+    padding-left:20px;
     display: flex; 
-    justify-content: space-around; 
-    margin: 0vw; 
- 
+    margin: 0vw;
 }
 
 .AboutPage_profile_name {
-    width: 275px;
-    height: 50px;
     font-family: proxima-nova, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #4A47DF;
-    text-align: center; 
-    margin-right: 12vw; 
+    text-align: left;
+    margin-bottom: 50px;
 }
 
 .AboutPage_profile_role {
-    padding-left: 15px;  
+    margin-top: 1vw;
     font-family: proxima-nova, sans-serif;
     font-size: 15pt;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;  
+    text-align: left;
 }
 
 #AboutPage_profile_sai_role {
@@ -91,7 +82,10 @@ caption {
 
 #AboutPage_profile_kiran_role {
     width: 200px;
-    margin-left: 2vw; 
+}
+
+#AboutPage_profile_jojo_role {
+    width: 200px;
 }
 
 #AboutPage_pictures {
@@ -137,7 +131,7 @@ caption {
     width: 706px;
     height: 60px;
     font-family: proxima-nova, sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 100;
     font-stretch: normal;
     font-style: normal;
@@ -147,6 +141,22 @@ caption {
 }
 
 #AboutPage_Cip_right_button {
-    background-color:  #708090; 
+    background-color: white; 
+    color: #4A47DF;
+    padding: 11px 23px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 0.63px;
     margin-top: 10vh; 
+}
+
+button:hover {
+    color: #E5E5E5;
+    opacity: 1.0;
+    box-shadow: none;
+}
+
+.left {
+    text-align: left;
 }
