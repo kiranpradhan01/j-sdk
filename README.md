@@ -1,6 +1,7 @@
 # Cognition
 ## Fight Misinformation. One Technical Topic at a time.
 An interactive educational platform that helps you combat misinformation with awareness.
+https://cognition-cip.herokuapp.com/
 
 ## Creators
 We are a team of four students at the University of Washington Information School. We have experience in front-end development, back-end development, design, research and all the  niches in between those topics.
