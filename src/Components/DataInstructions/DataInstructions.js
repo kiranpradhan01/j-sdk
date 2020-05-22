@@ -45,7 +45,7 @@ class DataInstructions extends React.Component {
                         <div>
                         <img src={Screen5} alt="blob1"></img>
                         </div>
-                    <li id="DataInstructions_last_element"> 7) Once your infomration has downloaded, which will take 2-3 minutes, upload the file that says 'ad_interests.json'</li>
+                    <li id="DataInstructions_last_element"> 7) Once your information has downloaded, which will take 2-3 minutes, upload the file that says 'ad_interests.json'</li>
                 </ul> 
             </div>
       );
