@@ -52,15 +52,12 @@ h2 {
     font-weight: normal;
 }
 
-.close-button {
-
-}
-
 #QuizModal_sizing {
     margin: 10%;
 }
 
-button {
+.close-button {
+    margin-top: 100px;
     font-weight: bold;
     padding: 11px 33px;
     background-color: #4A47DF;

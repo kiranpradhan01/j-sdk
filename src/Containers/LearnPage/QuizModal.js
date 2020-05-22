@@ -80,8 +80,9 @@ class QuizModal extends React.Component {
                                     <button class="answer_choice" disable={this.state.example3_button} onClick={()=> {this.setState({example3: false})}}>Disinformation</button>
                                 </div>
                                 {answer3}
+
+                            <button class="close-button" onClick={this.props.handleClose}> Return to Browse Topics</button>
                         </div>
-                        <button class="close-button" onClick={this.props.handleClose}> Return to Browse Topics</button>
                     </div>
                 </div>
             </div>
