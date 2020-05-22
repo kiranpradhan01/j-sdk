@@ -239,7 +239,7 @@ class SMLessonContainer extends React.Component {
     }
 
     showLoader() {
-        const dataSciencetitle = "Our data scientists is on it"; 
+        const dataSciencetitle = "Our data scientist is on it"; 
         const dataSciencedescription = "While we're analyzing your ad words, let's simulate an ad campaign to show how far simple advertisements can spread through a social media platform by targeting people with specific interests"; 
          if(!this.state.loadingCompHidden) {
           console.log(compLoaded); 
