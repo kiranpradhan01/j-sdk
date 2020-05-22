@@ -12,6 +12,8 @@ June 2020 Update: Although we have been developing this platform for the past 2 
 - [Sai Ranganathan](mailto:sr52@uw.edu)
 - [JoJo Saunders](mailto:jojosaunders99@gmail.com)
 
+## Credits
+[Font Awesome Icons](https://fontawesome.com/license) were used on the About Us tab.
 
 ## Notes and Acknowledgements
 Cognition was created as part of our [2020 Capstone Project](https://ischool.uw.edu/capstone) at the University of Washington Information School. Special thanks to Rolf Hapel and our sponsor, the [Center for an Informed Public](https://www.cip.uw.edu/).
