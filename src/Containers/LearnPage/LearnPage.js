@@ -130,13 +130,13 @@ class LearnPage extends React.Component {
                             <button onClick={() => this.handleClick("top")} id="to-top-button">Back to the top!</button>
                         </div>
                     </div>
-                    <div class="background-slant">
-                        <img src={Slant}></img>
+                    <div>
+                        <img src={Slant} class="background-slant"></img>
                     </div>
                     <Footer/>
                 </div>}
             </div>
-            {this.state.modal ? <QuizModal className="quiz" display="visible" handleClose={this.closeModal}/>:null}
+            {this.state.modal ? <QuizModal display="visible" handleClose={this.closeModal}/>:null}
         </div>
         )
     }
