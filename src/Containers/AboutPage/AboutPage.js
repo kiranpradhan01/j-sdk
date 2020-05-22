@@ -29,8 +29,20 @@ class AboutPage extends React.Component {
             <p id="AboutPage_header_text2"> We are upperclassmen from the University of Washington Information School! We all come from different disciplines within the Informatics major and use our different interests to develop this Capstone project. You can learn more about us at our respective platforms. </p>
           </div>
           <div id="AboutPage_pictures">
+                
                 <div class="About_Page_profile">
-                    <img src={DayoungProfile} alt="Dayoung Cheong" class="profile_picture"></img>
+                    <img src={KiranProfile} alt="Kiran Pradhan" class="profile_picture kiran"></img>
+                    <p class="AboutPage_profile_name" id="AboutPage_profile_kiran"> Kiran Pradhan </p> 
+                    <p class="AboutPage_profile_role" id="AboutPage_profile_kiran_role"> Project Manager and Developer </p>
+                    <div>
+                        <caption>Informatics 2021</caption>
+                        <a href="https://www.linkedin.com/in/kiran-pradhan/" target="_blank"><img src={linkedin_icon} alt="LinkedIn logo links to LinkedIn profile" class="icon"></img></a>
+                        <a href="mailto:pradhan.kiran786@gmail.com"><img src={envelope_icon} alt="Envelope icon links to email" class="icon second"></img></a>
+                      </div>
+                </div>
+                
+                <div class="About_Page_profile">
+                    <img src={DayoungProfile} alt="Dayoung Cheong" class="profile_picture dayoung"></img>
                     <div class="left">
                       <p class="AboutPage_profile_name"> Dayoung Cheong </p>
                       <p class="AboutPage_profile_role" id="AboutPage_profile_dayoung_role"> Full-Stack Developer </p>
@@ -43,18 +55,7 @@ class AboutPage extends React.Component {
                 </div>
 
                 <div class="About_Page_profile">
-                    <img src={KiranProfile} alt="Kiran Pradhan" class="profile_picture"></img>
-                    <p class="AboutPage_profile_name" id="AboutPage_profile_kiran"> Kiran Pradhan </p> 
-                    <p class="AboutPage_profile_role" id="AboutPage_profile_kiran_role"> Project Manager and Developer </p>
-                    <div>
-                        <caption>Informatics 2021</caption>
-                        <a href="https://www.linkedin.com/in/kiran-pradhan/" target="_blank"><img src={linkedin_icon} alt="LinkedIn logo links to LinkedIn profile" class="icon"></img></a>
-                        <a href="mailto:pradhan.kiran786@gmail.com"><img src={envelope_icon} alt="Envelope icon links to email" class="icon second"></img></a>
-                      </div>
-                </div>
-
-                <div class="About_Page_profile">
-                    <img src={SaiProfile} alt="Sai Ranganathan" class="profile_picture"></img>
+                    <img src={SaiProfile} alt="Sai Ranganathan" class="profile_picture sai"></img>
                     <p class="AboutPage_profile_name"> Sai Ranganathan </p>
                     <p class="AboutPage_profile_role"  id="AboutPage_profile_sai_role"> Full-Stack Developer </p>
                     <div>
@@ -65,8 +66,8 @@ class AboutPage extends React.Component {
                 </div>
 
                 <div class="About_Page_profile">
-                    <img src={JojoProfile} alt="Jojo Saunders" class="profile_picture"></img>
-                    <p class="AboutPage_profile_name"> Jojo Saunders </p> 
+                    <img src={JojoProfile} alt="JoJo Saunders" class="profile_picture jojo"></img>
+                    <p class="AboutPage_profile_name"> JoJo Saunders </p> 
                     <p class="AboutPage_profile_role" id="AboutPage_profile_jojo_role">Designer and Researcher </p>
                     <div>
                         <caption>Informatics 2021</caption>

@@ -37,6 +37,10 @@
     padding-left:20px; 
 }
 
+.sai {
+    width: 237px;
+}
+
 caption {
     font-size: 12pt;
     display: flex;
