@@ -1,6 +1,7 @@
 # Cognition
 ## Fight Misinformation. One Technical Topic at a time.
 An interactive educational platform that helps you combat misinformation with awareness.
+
 https://cognition-cip.herokuapp.com/
 
 ## Creators
