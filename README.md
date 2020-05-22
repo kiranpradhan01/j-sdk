@@ -13,6 +13,10 @@ June 2020 Update: Although we have been developing this platform for the past 2 
 - [Sai Ranganathan](mailto:sr52@uw.edu)
 - [JoJo Saunders](mailto:jojosaunders99@gmail.com)
 
+## Tools/Frameworks Used
+- React for front-end development
+- Figma for designing. Check out our design files [here](https://www.figma.com/file/oSFcV884FaCDZni7nYTsGT/Cognition-Screens?node-id=0%3A1)
+
 ## Credits
 [Font Awesome Icons](https://fontawesome.com/license) were used on the About Us tab.
 
