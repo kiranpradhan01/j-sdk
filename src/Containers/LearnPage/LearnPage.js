@@ -89,7 +89,7 @@ class LearnPage extends React.Component {
                     </div>
                 </div>
 
-                <div id="LearnPage_topics">
+                {this.state.modal? null : <div id="LearnPage_topics">
                     <h2 className="overlay">Learn More about Misinformation</h2>
                     <div id="LearnPage_topics_overlay">
                         <div id="LearnPage_topics_container">
@@ -134,9 +134,9 @@ class LearnPage extends React.Component {
                         <img src={Slant}></img>
                     </div>
                     <Footer/>
-                </div>
+                </div>}
             </div>
-            {this.state.modal ? <QuizModal display="visible" handleClose={this.closeModal}/>:null}
+            {this.state.modal ? <QuizModal className="quiz" display="visible" handleClose={this.closeModal}/>:null}
         </div>
         )
     }
