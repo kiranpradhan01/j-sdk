@@ -1,6 +1,7 @@
 # Cognition
 ## Fight Misinformation. One Technical Topic at a time.
 An interactive educational platform that helps you combat misinformation with awareness.
+
 https://cognition-cip.herokuapp.com/
 
 ## Creators
@@ -8,10 +9,10 @@ We are a team of four students at the University of Washington Information Schoo
 
 June 2020 Update: Although we have been developing this platform for the past 2 quarters, we are officially handing this project off to our sponsors so that future students may be able to build on our work. If you are interested in  developing these topics further, please contact [Chris Coward](mailto:ccoward@uw.edu) from the [Center for an Informed Public](https://www.cip.uw.edu/).
 
-- [Dayoung Cheong](mailto:cheongdayoung@gmail.com)
-- [Kiran Pradhan](mailto:pradhan.kiran786@gmail.com)
-- [Sai Ranganathan](mailto:sr52@uw.edu)
-- [JoJo Saunders](mailto:jojosaunders99@gmail.com)
+- [Dayoung Cheong](mailto:cheongdayoung@gmail.com) | Informatics 2020
+- [Kiran Pradhan](mailto:pradhan.kiran786@gmail.com) | Informatics 2021
+- [Sai Ranganathan](mailto:sr52@uw.edu) | Informatics 2020
+- [JoJo Saunders](mailto:jojosaunders99@gmail.com) | Informatics 2021
 
 ## Tools/Frameworks Used
 - React for front-end development
