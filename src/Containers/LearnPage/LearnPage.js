@@ -62,6 +62,16 @@ class LearnPage extends React.Component {
                     </div>
                 </div>
 
+                <div class="center">
+                    <div id="LearnPage_definitions_Text">
+                        <h2>Understanding the Difference</h2>
+                        <p>It can be difficult to understand the difference between misinformation and disinformation. In doing so, you should always consider the intent behind the information. Was their goal to decieve or was there simply a mistake in reporting? Before moving on, test you understanding a quick quiz to see if you can spot the difference between misinformation and disinformation!</p>
+                    </div>
+                    <div>
+                        <button id="quiz-button">Test Your Knowledge</button>
+                    </div>
+                </div>
+
                 <div id="LearnPage_topics">
                     <h2 className="overlay">Learn More about Misinformation</h2>
                     <div id="LearnPage_topics_overlay">

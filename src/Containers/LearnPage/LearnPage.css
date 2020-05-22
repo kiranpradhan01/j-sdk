@@ -23,7 +23,7 @@
     font-weight: bold;
     letter-spacing: 1.88px;
     color: var(--dark);
-    color: #0075C4;
+    color: #4A47DF;
 }
 
 #LearnPage_introduction_Text p {
@@ -48,7 +48,7 @@
     font-size: 40px;
     font-weight: bold;
     color: var(--dark);
-    color: #0075C4;
+    color: #4A47DF;
 }
 
 #LearnPage_definitions_Text p {
@@ -76,7 +76,7 @@
     font-size: 40px;
     font-weight: bold;
     color: var(--dark);
-    color: #0075C4;
+    color: #4A47DF;
     padding-left: 75px;
 }
 
@@ -93,6 +93,13 @@
     padding-left: 75px;
 }
 
+/* Quiz */
+#quiz-button {
+    font-weight: bold;
+    padding: 11px 33px;
+    background-color: #4A47DF;
+}
+
 /* Topics */
 #LearnPage_topics {
     position: relative;
@@ -106,7 +113,7 @@
     font-size: 40px;
     font-weight: bold;
     color: var(--dark);
-    color: #0075C4;
+    color: #4A47DF;
     padding-left: 75px;
     text-align: center
 }
@@ -192,14 +199,13 @@
 
 #to-top-button {
     background: white;
-    color: #0075C4;
+    color: #4A47DF;
     padding: 11px 23px;
     font-size: 15px;
     font-family: proxima-nova, sans-serif;
     letter-spacing: 0.63px;
     margin-top: 5em;
     background-color: white;
-    color: #0075C4;
 }
 
 button:hover {
@@ -212,10 +218,6 @@ button:hover {
     margin-top: 3em;
     width: 281px;
     height: 206px;
-}
-
-.img-select {
-    
 }
 
 .img-decide {
