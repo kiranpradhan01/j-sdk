@@ -63,11 +63,12 @@
 /* Questions */
 #LearnPage_questions {
     display: flex;
-    padding-left: 75px;
-    padding-right: 75px;
+    /* padding-left: 75px;
+    padding-right: 75px; */
     padding-top: 5em;
     padding-bottom: 5em;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 #LearnPage_questions_Text h2 {
@@ -83,7 +84,7 @@
 #LearnPage_questions_Text p {
     display: inline-block;
     text-align: left;
-    width: 750px;
+    /* width: 750px; */
     height: 172px;
     font-family: proxima-nova, sans-serif;
     font-size: 22px;
@@ -241,3 +242,11 @@ button:hover {
     position: relative;
     z-index: 1;
 }
+
+@media screen and (min-width: 1000px) {
+    .background-slant {
+        width: 100%;
+        height: 90%;
+        bottom: 150px;
+    }
+  }
